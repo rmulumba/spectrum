@@ -151,7 +151,7 @@ class UpsellNewUser extends Component {
 
           <ButtonRow>
             <a
-              href={`https://www.facebook.com/sharer/sharer.php?u=https://spectrum.chat&t=Come hang out with me on Spectrum, a new place on the internet for communities!`}
+              href={`https://www.facebook.com/sharer/sharer.php?u=https://chat.grindery.io&t=Come hang out with me on Spectrum, a new place on the internet for communities!`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -165,7 +165,7 @@ class UpsellNewUser extends Component {
               </Button>
             </a>
             <a
-              href={`https://twitter.com/share?text=Come hang out with me on @withspectrum, a new place on the internet for communities!&url=https://spectrum.chat`}
+              href={`https://twitter.com/share?text=Come hang out with me on @withspectrum, a new place on the internet for communities!&url=https://chat.grindery.io`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -222,4 +222,7 @@ class UpsellNewUser extends Component {
   }
 }
 
-export default compose(withRouter, connect())(UpsellNewUser);
+export default compose(
+  withRouter,
+  connect()
+)(UpsellNewUser);

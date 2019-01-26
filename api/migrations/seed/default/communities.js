@@ -15,7 +15,7 @@ module.exports = [
     isPrivate: false,
     name: 'Spectrum',
     description: 'The future of communities',
-    website: 'https://spectrum.chat',
+    website: 'https://chat.grindery.io',
     profilePhoto:
       'https://spectrum.imgix.net/communities/-Kh6RfPYjmSaIWbkck8i/Twitter Profile.png.0.6225566835336693',
     coverPhoto:
@@ -29,7 +29,7 @@ module.exports = [
     isPrivate: false,
     name: 'Payments',
     description: 'Where payments are tested',
-    website: 'https://spectrum.chat',
+    website: 'https://chat.grindery.io',
     profilePhoto:
       'https://spectrum.imgix.net/communities/-Kh6RfPYjmSaIWbkck8i/Twitter Profile.png.0.6225566835336693',
     coverPhoto:
@@ -44,7 +44,7 @@ module.exports = [
     isPrivate: false,
     name: 'Deleted',
     description: 'Things didnt work out',
-    website: 'https://spectrum.chat',
+    website: 'https://chat.grindery.io',
     profilePhoto:
       'https://spectrum.imgix.net/communities/-Kh6RfPYjmSaIWbkck8i/Twitter Profile.png.0.6225566835336693',
     coverPhoto:
@@ -58,7 +58,7 @@ module.exports = [
     isPrivate: true,
     name: 'Private community',
     description: 'Private community',
-    website: 'https://spectrum.chat',
+    website: 'https://chat.grindery.io',
     profilePhoto:
       'https://spectrum.imgix.net/communities/-Kh6RfPYjmSaIWbkck8i/Twitter Profile.png.0.6225566835336693',
     coverPhoto:

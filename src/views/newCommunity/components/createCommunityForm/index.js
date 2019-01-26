@@ -523,7 +523,7 @@ class CreateCommunityForm extends React.Component<Props, State> {
             onBlur={this.checkSuggestedCommunities}
             dataCy="community-slug-input"
           >
-            spectrum.chat/
+            chat.grindery.io/
           </UnderlineInput>
 
           {slugTaken && (

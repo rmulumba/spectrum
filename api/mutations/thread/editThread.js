@@ -19,6 +19,10 @@ type Input = {
   input: EditThreadInput,
 };
 
+const IMGIX_DOMAIN = process.env.IMGIX_DOMAIN || 'spectrum.imgix.net';
+const IMGIX_PROXY_DOMAIN =
+  process.env.IMGIX_PROXY_DOMAIN || 'spectrum-proxy.imgix.net';
+
 export default requireAuth(async (_: any, args: Input, ctx: GraphQLContext) => {
   const { input } = args;
   const { user } = ctx;
@@ -98,8 +102,8 @@ export default requireAuth(async (_: any, args: Input, ctx: GraphQLContext) => {
 
     const stripQueryParams = (str: string): string => {
       if (
-        str.indexOf('https://spectrum.imgix.net') < 0 &&
-        str.indexOf('https://spectrum-proxy.imgix.net') < 0
+        str.indexOf(`https://${IMGIX_DOMAIN}`) < 0 &&
+        str.indexOf(`https://${IMGIX_PROXY_DOMAIN}`) < 0
       ) {
         return str;
       }

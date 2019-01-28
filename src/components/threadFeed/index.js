@@ -98,12 +98,12 @@ const UpsellState = ({ community }) => (
     <UpsellFooter>
       <p>
         If you’ve encountered an issue, want a new feature, or just need some
-        help, you can always find the Spectrum team in the{' '}
-        <Link to={'/spectrum'}>Spectrum Support</Link> community or on{' '}
+        help, you can always find the Grindery team in the{' '}
+        <Link to={'/spectrum'}>Grindery Support</Link> community or on{' '}
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://twitter.com/withspectrum"
+          href="https://twitter.com/withgrindery"
         >
           Twitter
         </a>{' '}

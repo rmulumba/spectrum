@@ -19,7 +19,7 @@ const Share = ({ community, history, onboarding }) => {
             community.slug
           )}&t=Come hang out with me in the ${
             community.name
-          } community on Spectrum!`}
+          } community on Grindery!`}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -35,7 +35,7 @@ const Share = ({ community, history, onboarding }) => {
         <a
           href={`https://twitter.com/share?text=Come hang out with me in the ${
             community.name
-          } community on @withspectrum!&url=https://chat.grindery.io/${encodeURIComponent(
+          } community on @withgrindery!&url=https://chat.grindery.io/${encodeURIComponent(
             community.slug
           )}`}
           target="_blank"

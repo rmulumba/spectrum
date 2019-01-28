@@ -13,7 +13,7 @@ module.exports = [
     id: SPECTRUM_COMMUNITY_ID,
     createdAt: new Date(DATE),
     isPrivate: false,
-    name: 'Spectrum',
+    name: 'Grindery',
     description: 'The future of communities',
     website: 'https://chat.grindery.io',
     profilePhoto:

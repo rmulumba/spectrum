@@ -329,7 +329,7 @@ export const CommunitySearch = (props: Props) => {
       <ThisContent>
         <ThisTagline>Find a community for you!</ThisTagline>
         <ThisCopy>
-          Try searching for topics like “crypto” or for products like “React”!
+          Try searching for topics like “start” or for products like “Grindery”!
         </ThisCopy>
         <Search />
       </ThisContent>

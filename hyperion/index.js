@@ -186,6 +186,14 @@ if (process.env.NODE_ENV === 'development') {
   );
 }
 
+app.get('/', (req: express$Request, res, next) => {
+  if (req.session && req.user && !req.query.t) {
+    // Show notification page by default
+    return res.redirect('/notifications');
+  }
+  next();
+});
+
 app.get('*', (req: express$Request, res, next) => {
   // Electron requests should only be client-side rendered
   if (

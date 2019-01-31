@@ -125,8 +125,12 @@ const Body = styled(FlexCol)`
   background: ${theme.bg.wash};
 `;
 
-const DashboardFallback = signedOutFallback(Dashboard, Pages);
-const HomeFallback = signedOutFallback(Dashboard, () => <Redirect to="/" />);
+const DashboardFallback = signedOutFallback(Dashboard, () => (
+  <Redirect to="/login" />
+));
+const HomeFallback = signedOutFallback(Dashboard, () => (
+  <Redirect to="/login" />
+));
 const LoginFallback = signedOutFallback(() => <Redirect to="/" />, Login);
 const CommunityLoginFallback = signedOutFallback(
   props => <Redirect to={`/${props.match.params.communitySlug}`} />,
@@ -158,6 +162,11 @@ type Props = {
   currentUser: ?GetUserType,
   isLoadingCurrentUser: boolean,
   maintenanceMode?: boolean,
+};
+
+const externalRedirect = url => () => {
+  location.replace(url);
+  return '';
 };
 
 class Routes extends React.Component<Props> {
@@ -213,13 +222,33 @@ class Routes extends React.Component<Props> {
                 <Route exact path="/home" component={HomeFallback} />
 
                 {/* Public Business Pages */}
-                <Route path="/about" component={Pages} />
+                <Route
+                  path="/about"
+                  render={externalRedirect('https://www.grindery.io/')}
+                />
                 <Route path="/contact" component={Pages} />
-                <Route path="/terms" component={Pages} />
-                <Route path="/privacy" component={Pages} />
-                <Route path="/terms.html" component={Pages} />
-                <Route path="/privacy.html" component={Pages} />
-                <Route path="/code-of-conduct" component={Pages} />
+                <Route
+                  path="/terms"
+                  render={externalRedirect('https://www.grindery.io/terms')}
+                />
+                <Route
+                  path="/privacy"
+                  render={externalRedirect('https://www.grindery.io/privacy')}
+                />
+                <Route
+                  path="/terms.html"
+                  render={externalRedirect('https://www.grindery.io/terms')}
+                />
+                <Route
+                  path="/privacy.html"
+                  render={externalRedirect('https://www.grindery.io/privacy')}
+                />
+                <Route
+                  path="/code-of-conduct"
+                  render={externalRedirect(
+                    'https://www.grindery.io/code-of-conduct'
+                  )}
+                />
                 <Route path="/support" component={Pages} />
                 <Route path="/features" component={Pages} />
                 <Route path="/faq" component={Pages} />

@@ -76,7 +76,7 @@ export class Login extends React.Component<Props> {
             >
               Code of Conduct
             </a>
-            ,
+            ,{' '}
             <a
               href="https://www.grindery.io/privacy"
               target="_blank"

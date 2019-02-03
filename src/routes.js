@@ -5,7 +5,7 @@ import { Route, Switch, Redirect } from 'react-router';
 import styled, { ThemeProvider } from 'styled-components';
 import Loadable from 'react-loadable';
 import { ErrorBoundary } from 'src/components/error';
-import { CLIENT_URL } from './api/constants';
+import { CLIENT_URL, CLIENT_MAIN_DOMAIN } from './api/constants';
 import generateMetaInfo from 'shared/generate-meta-info';
 import './reset.css.js';
 import { theme } from 'shared/theme';
@@ -169,10 +169,106 @@ const externalRedirect = url => () => {
   return '';
 };
 
+const COMMUNITY_DOMAIN_ALIASES = {
+  suf: 'startup-framework',
+};
+
+class CommunityHostHelper {
+  constructor(ssrHost) {
+    this.ssrHost = ssrHost;
+  }
+  getDomainCommunitySlug() {
+    const currentHost = global.location
+      ? global.location.host.toLowerCase()
+      : this.ssrHost;
+    if (currentHost in COMMUNITY_DOMAIN_ALIASES) {
+      return COMMUNITY_DOMAIN_ALIASES[currentHost];
+    }
+    if (
+      !currentHost ||
+      !currentHost.endsWith(CLIENT_MAIN_DOMAIN) ||
+      currentHost === CLIENT_MAIN_DOMAIN
+    ) {
+      // On main domain or test domain
+      return '';
+    }
+    const domainPart = currentHost
+      .slice(0, currentHost.length - CLIENT_MAIN_DOMAIN.length - 1)
+      .split('.');
+    const domainPartLast = domainPart[domainPart.length - 1];
+    if (domainPartLast === 'workers') {
+      return '';
+    }
+    return COMMUNITY_DOMAIN_ALIASES[domainPartLast] || domainPartLast;
+  }
+  adaptCommunityRoutes(routeWrapper) {
+    const routes = routeWrapper.props.children || [routeWrapper];
+    const communitySlug = this.getDomainCommunitySlug();
+    if (!communitySlug) {
+      return routes;
+    }
+    const pathRe = new RegExp(`^\\/${communitySlug}(\\/|$)`);
+    const wrapHistory = h => {
+      const installHack = (keys, funcFactory) => {
+        if (typeof keys === 'string') {
+          keys = [keys];
+        }
+        for (const key of keys) {
+          const oldFunc = h[key];
+          if (!oldFunc.__hasDomainHack) {
+            h[key] = funcFactory(oldFunc);
+            h[key].__hasDomainHack = true;
+          }
+        }
+      };
+      const patchLocation = location => {
+        if (typeof location === 'string') {
+          return location.replace(pathRe, '/');
+        }
+        return {
+          ...location,
+          pathname: location.pathname.replace(pathRe, '/'),
+        };
+      };
+      installHack(['createHref', 'replace', 'push'], oldFunc => {
+        return function(location, ...args) {
+          return oldFunc.call(this, patchLocation(location), ...args);
+        };
+      });
+      return h;
+    };
+    const wrapComponent = Component => {
+      if (!Component) {
+        return undefined;
+      }
+      return args => {
+        args = {
+          ...args,
+          history: wrapHistory(args.history),
+        };
+        args.match.params.communitySlug = communitySlug;
+        return <Component {...args} />;
+      };
+    };
+    const ret = routes.map(route => {
+      const path = route.props.path.replace(/:communitySlug(\/|$)/, '');
+      const component = wrapComponent(route.props.component);
+      return <Route {...{ path, component }} />;
+    });
+    return ret;
+  }
+}
+
 class Routes extends React.Component<Props> {
   render() {
     const { currentUser, isLoadingCurrentUser } = this.props;
     const { title, description } = generateMetaInfo();
+
+    const communityHostHelper = new CommunityHostHelper(this.props.ssrHost);
+    const isCommunityDomain = !!communityHostHelper.getDomainCommunitySlug();
+    const adaptCommunityRoutes = communityHostHelper.adaptCommunityRoutes.bind(
+      communityHostHelper
+    );
 
     if (this.props.maintenanceMode) {
       return (
@@ -206,7 +302,7 @@ class Routes extends React.Component<Props> {
               <AuthViewHandler>{() => null}</AuthViewHandler>
               <ThirdPartyContext />
               <Status />
-              <Route component={Navbar} />
+              {isCommunityDomain ? null : <Route component={Navbar} />}
 
               <Route component={ModalRoot} />
               <Route component={Toasts} />
@@ -218,45 +314,77 @@ class Routes extends React.Component<Props> {
                   https://reacttraining.com/react-router/web/api/Switch
                 */}
               <Switch>
-                <Route exact path="/" component={DashboardFallback} />
-                <Route exact path="/home" component={HomeFallback} />
-
+                {isCommunityDomain ? null : (
+                  <Route exact path="/" component={DashboardFallback} />
+                )}
+                {isCommunityDomain ? null : (
+                  <Route exact path="/home" component={HomeFallback} />
+                )}
                 {/* Public Business Pages */}
-                <Route
-                  path="/about"
-                  render={externalRedirect('https://www.grindery.io/')}
-                />
-                <Route path="/contact" component={Pages} />
-                <Route
-                  path="/terms"
-                  render={externalRedirect('https://www.grindery.io/terms')}
-                />
-                <Route
-                  path="/privacy"
-                  render={externalRedirect('https://www.grindery.io/privacy')}
-                />
-                <Route
-                  path="/terms.html"
-                  render={externalRedirect('https://www.grindery.io/terms')}
-                />
-                <Route
-                  path="/privacy.html"
-                  render={externalRedirect('https://www.grindery.io/privacy')}
-                />
-                <Route
-                  path="/code-of-conduct"
-                  render={externalRedirect(
-                    'https://www.grindery.io/code-of-conduct'
-                  )}
-                />
-                <Route path="/support" component={Pages} />
-                <Route path="/features" component={Pages} />
-                <Route path="/faq" component={Pages} />
-                <Route path="/apps" component={Pages} />
+                {isCommunityDomain ? null : (
+                  <Route
+                    path="/about"
+                    render={externalRedirect('https://www.grindery.io/')}
+                  />
+                )}
+                {isCommunityDomain ? null : (
+                  <Route path="/contact" component={Pages} />
+                )}
+                {isCommunityDomain ? null : (
+                  <Route
+                    path="/terms"
+                    render={externalRedirect('https://www.grindery.io/terms')}
+                  />
+                )}
+                {isCommunityDomain ? null : (
+                  <Route
+                    path="/privacy"
+                    render={externalRedirect('https://www.grindery.io/privacy')}
+                  />
+                )}
+                {isCommunityDomain ? null : (
+                  <Route
+                    path="/terms.html"
+                    render={externalRedirect('https://www.grindery.io/terms')}
+                  />
+                )}
+                {isCommunityDomain ? null : (
+                  <Route
+                    path="/privacy.html"
+                    render={externalRedirect('https://www.grindery.io/privacy')}
+                  />
+                )}
+                {isCommunityDomain ? null : (
+                  <Route
+                    path="/code-of-conduct"
+                    render={externalRedirect(
+                      'https://www.grindery.io/code-of-conduct'
+                    )}
+                  />
+                )}
+                {isCommunityDomain ? null : (
+                  <Route path="/support" component={Pages} />
+                )}
+                {isCommunityDomain ? null : (
+                  <Route path="/features" component={Pages} />
+                )}
+                {isCommunityDomain ? null : (
+                  <Route path="/faq" component={Pages} />
+                )}
+                {isCommunityDomain ? null : (
+                  <Route path="/apps" component={Pages} />
+                )}
 
                 {/* App Pages */}
-                <Route path="/new/community" component={NewCommunityFallback} />
-                <Route path="/new/thread" component={ComposerFallback} />
+                {isCommunityDomain ? null : (
+                  <Route
+                    path="/new/community"
+                    component={NewCommunityFallback}
+                  />
+                )}
+                {isCommunityDomain ? null : (
+                  <Route path="/new/thread" component={ComposerFallback} />
+                )}
                 <Route path="/new/search" component={Search} />
 
                 <Route
@@ -264,8 +392,12 @@ class Routes extends React.Component<Props> {
                   render={() => <Redirect to="/new/community" />}
                 />
 
-                <Route path="/login" component={LoginFallback} />
-                <Route path="/explore" component={Explore} />
+                {isCommunityDomain ? null : (
+                  <Route path="/login" component={LoginFallback} />
+                )}
+                {isCommunityDomain ? null : (
+                  <Route path="/explore" component={Explore} />
+                )}
                 <Route path="/messages/new" component={MessagesFallback} />
                 <Route
                   path="/messages/:threadId"
@@ -317,45 +449,49 @@ class Routes extends React.Component<Props> {
                     pass. We handle null communitySlug values downstream by either
                     redirecting to home or showing a 404
                   */}
-                <Route
-                  path="/:communitySlug/:channelSlug/settings"
-                  component={ChannelSettingsFallback}
-                />
-                <Route
-                  path="/:communitySlug/:channelSlug/join/:token"
-                  component={PrivateChannelJoin}
-                />
-                <Route
-                  path="/:communitySlug/:channelSlug/join"
-                  component={PrivateChannelJoin}
-                />
-                <Route
-                  path="/:communitySlug/settings"
-                  component={CommunitySettingsFallback}
-                />
-                <Route
-                  path="/:communitySlug/join/:token"
-                  component={PrivateCommunityJoin}
-                />
-                <Route
-                  path="/:communitySlug/login"
-                  component={CommunityLoginFallback}
-                />
-                <Route
-                  // NOTE(@mxstbr): This custom path regexp matches threadId correctly in all cases, no matter if we prepend it with a custom slug or not.
-                  // Imagine our threadId is "id-123-id" (similar in shape to an actual UUID)
-                  // - /id-123-id => id-123-id, easy start that works
-                  // - /some-custom-slug~id-123-id => id-123-id, custom slug also works
-                  // - /~id-123-id => id-123-id => id-123-id, empty custom slug also works
-                  // - /some~custom~slug~id-123-id => id-123-id, custom slug with delimiter char in it (~) also works! :tada:
-                  path="/:communitySlug/:channelSlug/(.*~)?:threadId"
-                  component={FullscreenThreadView}
-                />
-                <Route
-                  path="/:communitySlug/:channelSlug"
-                  component={ChannelView}
-                />
-                <Route path="/:communitySlug" component={CommunityView} />
+                {adaptCommunityRoutes(
+                  <Switch>
+                    <Route
+                      path="/:communitySlug/:channelSlug/settings"
+                      component={ChannelSettingsFallback}
+                    />
+                    <Route
+                      path="/:communitySlug/:channelSlug/join/:token"
+                      component={PrivateChannelJoin}
+                    />
+                    <Route
+                      path="/:communitySlug/:channelSlug/join"
+                      component={PrivateChannelJoin}
+                    />
+                    <Route
+                      path="/:communitySlug/settings"
+                      component={CommunitySettingsFallback}
+                    />
+                    <Route
+                      path="/:communitySlug/join/:token"
+                      component={PrivateCommunityJoin}
+                    />
+                    <Route
+                      path="/:communitySlug/login"
+                      component={CommunityLoginFallback}
+                    />
+                    <Route
+                      // NOTE(@mxstbr): This custom path regexp matches threadId correctly in all cases, no matter if we prepend it with a custom slug or not.
+                      // Imagine our threadId is "id-123-id" (similar in shape to an actual UUID)
+                      // - /id-123-id => id-123-id, easy start that works
+                      // - /some-custom-slug~id-123-id => id-123-id, custom slug also works
+                      // - /~id-123-id => id-123-id => id-123-id, empty custom slug also works
+                      // - /some~custom~slug~id-123-id => id-123-id, custom slug with delimiter char in it (~) also works! :tada:
+                      path="/:communitySlug/:channelSlug/(.*~)?:threadId"
+                      component={FullscreenThreadView}
+                    />
+                    <Route
+                      path="/:communitySlug/:channelSlug"
+                      component={ChannelView}
+                    />
+                    <Route path="/:communitySlug" component={CommunityView} />
+                  </Switch>
+                )}
               </Switch>
             </Body>
           </ScrollManager>

@@ -187,6 +187,9 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 app.get('/', (req: express$Request, res, next) => {
+  if (req.hostname.toLowerCase() !== 'chat.grindery.io') {
+    return next();
+  }
   if (req.session && req.user && !req.query.t) {
     // Show notification page by default
     return res.redirect('/notifications');

@@ -158,15 +158,15 @@ export const Overview = (props: Props) => {
             IRC.
           </ThisCopy>
           <ThisCopy>
-            Spectrum makes it easy to grow safe, successful online communities
-            that are built to last.
+            Keyy makes it easy to grow safe, successful online communities that
+            are built to last.
           </ThisCopy>
           <Actions>
             <Link
               to="/login"
               onClick={() => track(events.HOME_PAGE_JOIN_SPECTRUM_CLICKED)}
             >
-              <ThisPrimaryCTA icon="welcome">Join Spectrum</ThisPrimaryCTA>
+              <ThisPrimaryCTA icon="welcome">Join Keyy</ThisPrimaryCTA>
             </Link>
             <Link
               to="/new/community"
@@ -257,8 +257,8 @@ export const Centralized = (props: Props) => {
         <Text>
           <ThisTagline>Grow together</ThisTagline>
           <ThisCopy>
-            By building on Spectrum, communities become easily discoverable
-            through search, curation, and even other community members.
+            By building on Keyy, communities become easily discoverable through
+            search, curation, and even other community members.
           </ThisCopy>
           <ThisCopy>
             It also means no more managing multiple logins or playing
@@ -384,9 +384,9 @@ export const Chat = (props: Props) => {
         <FlexCol>
           <ThisTagline>Real-time messaging with long-term value</ThisTagline>
           <ThisCopy>
-            Conversations on Spectrum are real-time chat, just like your
-            favorite messaging app. But on Spectrum, conversations continue to
-            provide value to more and more people over time.
+            Conversations on Keyy are real-time chat, just like your favorite
+            messaging app. But on Keyy, conversations continue to provide value
+            to more and more people over time.
           </ThisCopy>
           <ThisCopy>
             Every conversation gets a unique link to make it easy for people to
@@ -440,7 +440,7 @@ export const Sell = (props: Props) => {
     <ThisSection goop={2} background="dark" color={'bg.reverse'}>
       <ThisContent>
         <Text>
-          <ThisTagline>Spectrum saves you time and money</ThisTagline>
+          <ThisTagline>Keyy saves you time and money</ThisTagline>
           <Bullets>
             <Bullet>
               <BulletHeading>
@@ -460,9 +460,9 @@ export const Sell = (props: Props) => {
                 <BulletTitle>Bring people together</BulletTitle>
               </BulletHeading>
               <BulletCopy>
-                Spectrum gives your top supporters and advocates a place to
-                share their knowledge, empower others, and foster a place of
-                belonging for everyone.
+                Keyy gives your top supporters and advocates a place to share
+                their knowledge, empower others, and foster a place of belonging
+                for everyone.
               </BulletCopy>
             </Bullet>
             <Bullet>
@@ -474,7 +474,7 @@ export const Sell = (props: Props) => {
                 from your customers.
               </BulletCopy>
               <BulletCopy>
-                Think of Spectrum as a new direct line to discovering what your
+                Think of Keyy as a new direct line to discovering what your
                 audience wants the most.
               </BulletCopy>
             </Bullet>
@@ -627,7 +627,7 @@ export const Yours = (props: Props) => {
     <Section goop={0} background={'reverse'}>
       <ThisContent>
         <FlexCol>
-          <ThisTagline>You’re gonna love Spectrum.</ThisTagline>
+          <ThisTagline>You’re gonna love Keyy.</ThisTagline>
           <Quotes>
             <Quote>
               <Rule>
@@ -692,7 +692,7 @@ export const Yours = (props: Props) => {
               to="/login"
               onClick={() => track(events.HOME_PAGE_JOIN_SPECTRUM_CLICKED)}
             >
-              <ThisPrimaryCTA icon="welcome">Join Spectrum</ThisPrimaryCTA>
+              <ThisPrimaryCTA icon="welcome">Join Keyy</ThisPrimaryCTA>
             </Link>
             <Link
               to="/explore"

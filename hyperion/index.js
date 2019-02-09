@@ -58,7 +58,7 @@ app.use('/api', (req: express$Request, res: express$Response) => {
   const redirectUrl = `${req.baseUrl}${req.path}`;
   res.redirect(
     req.method === 'POST' || req.xhr ? 307 : 301,
-    `https://chat.grindery.io${redirectUrl}`
+    `https://learn.keyy.org${redirectUrl}`
   );
 });
 
@@ -66,7 +66,7 @@ app.use('/auth', (req: express$Request, res: express$Response) => {
   const redirectUrl = `${req.baseUrl}${req.path}`;
   res.redirect(
     req.method === 'POST' || req.xhr ? 307 : 301,
-    `https://chat.grindery.io${redirectUrl}`
+    `https://learn.keyy.org${redirectUrl}`
   );
 });
 
@@ -74,7 +74,7 @@ app.use('/websocket', (req: express$Request, res: express$Response) => {
   const redirectUrl = `${req.baseUrl}${req.path}`;
   res.redirect(
     req.method === 'POST' || req.xhr ? 307 : 301,
-    `https://chat.grindery.io${redirectUrl}`
+    `https://learn.keyy.org${redirectUrl}`
   );
 });
 

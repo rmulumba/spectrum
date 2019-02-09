@@ -31,25 +31,18 @@
     "GOOGLE_OAUTH_CLIENT_SECRET": "@google-oauth-client-secret",
     "GITHUB_OAUTH_CLIENT_ID": "@github-oauth-client-id",
     "GITHUB_OAUTH_CLIENT_SECRET": "@github-oauth-client-secret",
-    "TWITTER_OAUTH_CLIENT_SECRET_DEVELOPMENT": "@twitter-oauth-client-secret-development",
-    "FACEBOOK_OAUTH_CLIENT_ID_DEVELOPMENT": "@facebook-oauth-client-id-development",
-    "FACEBOOK_OAUTH_CLIENT_SECRET_DEVELOPMENT": "@facebook-oauth-client-secret-development",
-    "GOOGLE_OAUTH_CLIENT_SECRET_DEVELOPMENT": "@google-oauth-client-secret-development",
-    "GITHUB_OAUTH_CLIENT_SECRET_DEVELOPMENT": "@github-oauth-client-secret-development",
     "SLACK_SECRET": "@slack-secret",
     "SLACK_CLIENT_ID": "@slack-client-id",
-    "SLACK_SECRET_DEVELOPMENT": "@slack-secret-development",
     "ALGOLIA_APP_ID": "@algolia-app-id",
     "ALGOLIA_API_SECRET": "@algolia-api-secret",
     "SENDGRID_API_KEY": "@sendgrid-api-key",
     "EMAIL_JWT_SIGNATURE": "@email-jwt-signature",
-    "PERSPECTIVE_API_KEY": "@perspective-api-key",
-    "IMGIX_PROXY_SECURITY_KEY": "@imgix-proxy-security-key",
     "IMGIX_SECURITY_KEY": "@imgix-security-key",
     "IMGIX_DOMAIN": "@imgix-domain",
     "IMGIX_PROXY_DOMAIN": "@imgix-proxy-domain",
     "SESSION_COOKIE_SECRET": "@session-cookie-secret",
     "API_TOKEN_SECRET": "@api-token-secret",
-    "ENCRYPTION_KEY": "@encryption-key"
+    "ENCRYPTION_KEY": "@encryption-key",
+    "AMPLITUDE_API_KEY": "@amplitude-api-key"
   }
 }

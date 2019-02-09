@@ -137,7 +137,7 @@ class NewCommunity extends React.Component<Props, State> {
     const { activeStep, community } = this.state;
     switch (activeStep) {
       case 1: {
-        return 'Creating a community on Spectrum is free, forever. To get started, tell us more about your community below.';
+        return 'Creating a community on Grindery is free, forever. To get started, tell us more about your community below.';
       }
       case 2: {
         return `Kickstart ${
@@ -194,31 +194,25 @@ class NewCommunity extends React.Component<Props, State> {
               </Description>
 
               {// gather community meta info
-              activeStep === 1 &&
-                !community && (
-                  <CreateCommunityForm
-                    communityCreated={this.communityCreated}
-                  />
-                )}
+              activeStep === 1 && !community && (
+                <CreateCommunityForm communityCreated={this.communityCreated} />
+              )}
 
-              {activeStep === 1 &&
-                community && (
-                  <EditCommunityForm
-                    communityUpdated={this.communityCreated}
-                    community={community}
-                  />
-                )}
+              {activeStep === 1 && community && (
+                <EditCommunityForm
+                  communityUpdated={this.communityCreated}
+                  community={community}
+                />
+              )}
 
-              {activeStep === 2 &&
-                community &&
-                community.id && (
-                  <ContentContainer data-cy="community-creation-invitation-step">
-                    <Divider />
-                    <SlackConnection isOnboarding={true} id={community.id} />
-                    <Divider />
-                    <CommunityInvitationForm id={community.id} />
-                  </ContentContainer>
-                )}
+              {activeStep === 2 && community && community.id && (
+                <ContentContainer data-cy="community-creation-invitation-step">
+                  <Divider />
+                  <SlackConnection isOnboarding={true} id={community.id} />
+                  <Divider />
+                  <CommunityInvitationForm id={community.id} />
+                </ContentContainer>
+              )}
 
               {// connect a slack team or invite via email
               activeStep === 2 && (

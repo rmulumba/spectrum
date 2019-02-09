@@ -20,7 +20,7 @@ const TWITTER_OAUTH_CLIENT_SECRET = IS_PROD
 
 const FACEBOOK_OAUTH_CLIENT_ID = IS_PROD
   ? process.env.FACEBOOK_OAUTH_CLIENT_ID
-  : process.env.FACEBOOK_OAUTH_CLIENT_SECRET_DEVELOPMENT;
+  : process.env.FACEBOOK_OAUTH_CLIENT_ID_DEVELOPMENT;
 
 const FACEBOOK_OAUTH_CLIENT_SECRET = IS_PROD
   ? process.env.FACEBOOK_OAUTH_CLIENT_SECRET
@@ -35,15 +35,16 @@ const GITHUB_OAUTH_CLIENT_SECRET = IS_PROD
   : process.env.GITHUB_OAUTH_CLIENT_SECRET_DEVELOPMENT;
 
 const TWITTER_OAUTH_CLIENT_ID = IS_PROD
-  ? 'vxmsICGyIIoT5NEYi1I8baPrf'
+  ? process.env.TWITTER_OAUTH_CLIENT_ID || 'vxmsICGyIIoT5NEYi1I8baPrf'
   : 'Qk7BWFe44JKswEw2sNaDAA4x7';
 
 const GOOGLE_OAUTH_CLIENT_ID = IS_PROD
-  ? '923611718470-chv7p9ep65m3fqqjr154r1p3a5j6oidc.apps.googleusercontent.com'
+  ? process.env.GOOGLE_OAUTH_CLIENT_ID ||
+    '923611718470-chv7p9ep65m3fqqjr154r1p3a5j6oidc.apps.googleusercontent.com'
   : '923611718470-hjribk5128dr3s26cbp5cbdecigrsjsp.apps.googleusercontent.com';
 
 const GITHUB_OAUTH_CLIENT_ID = IS_PROD
-  ? '208a2e8684d88883eded'
+  ? process.env.GITHUB_OAUTH_CLIENT_ID || '208a2e8684d88883eded'
   : 'ed3e924f4a599313c83b';
 
 const isSerializedJSON = (str: string) =>
@@ -57,7 +58,7 @@ const init = () => {
 
   // NOTE(@mxstbr): `data` used to be just the userID, but is now the full user data
   // to avoid having to go to the db on every single request. We have to handle both
-  // cases here, as more and more users use Spectrum again we go to the db less and less
+  // cases here, as more and more users use Grindery again we go to the db less and less
   passport.deserializeUser((data, done) => {
     // Fast path: we got the full user data in the cookie
     if (isSerializedJSON(data)) {
@@ -89,7 +90,7 @@ const init = () => {
         consumerKey: TWITTER_OAUTH_CLIENT_ID,
         consumerSecret: TWITTER_OAUTH_CLIENT_SECRET,
         callbackURL: IS_PROD
-          ? 'https://spectrum.chat/auth/twitter/callback'
+          ? 'https://chat.grindery.io/auth/twitter/callback'
           : 'http://localhost:3001/auth/twitter/callback',
         includeEmail: true,
       },

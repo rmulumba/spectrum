@@ -79,7 +79,7 @@ export class Login extends React.Component<Props> {
             <Subtitle>
               {brandedLogin.message && brandedLogin.message.length > 0
                 ? brandedLogin.message
-                : 'Spectrum is a place where communities can share, discuss, and grow together. Sign in below to get in on the conversation.'}
+                : 'Grindery is a place where communities can share, discuss, and grow together. Sign in below to get in on the conversation.'}
             </Subtitle>
 
             <LoginButtonSet
@@ -91,9 +91,9 @@ export class Login extends React.Component<Props> {
             />
 
             <CodeOfConduct>
-              By using Spectrum, you agree to our{' '}
+              By using Grindery, you agree to our{' '}
               <a
-                href="https://github.com/withspectrum/code-of-conduct"
+                href="https://www.grindery.io/code-of-conduct"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() =>

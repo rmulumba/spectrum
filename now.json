@@ -1,5 +1,5 @@
 {
-  "version":1,
+  "version": 1,
   "scale": {
     "sfo1": {
       "min": 1,
@@ -10,6 +10,7 @@
     "DEBUG": "shared:rethinkdb:db-query-cache",
     "S3_TOKEN": "@s3-token",
     "S3_SECRET": "@s3-secret",
+    "S3_PATH_PREFIX": "@s3-path-prefix",
     "COMPOSE_RETHINKDB_PASSWORD": "@rethinkdb-password",
     "COMPOSE_RETHINKDB_URL": "@rethinkdb-url",
     "COMPOSE_RETHINKDB_PORT": "@rethinkdb-port",
@@ -22,16 +23,33 @@
     "REDIS_CACHE_PORT": "@compose-redis-port",
     "REDIS_CACHE_URL": "@compose-redis-url",
     "REDIS_CACHE_PASSWORD": "@compose-redis-password",
+    "TWITTER_OAUTH_CLIENT_ID": "@twitter-oauth-client-id",
     "TWITTER_OAUTH_CLIENT_SECRET": "@twitter-oauth-client-secret",
     "FACEBOOK_OAUTH_CLIENT_ID": "@facebook-oauth-client-id",
     "FACEBOOK_OAUTH_CLIENT_SECRET": "@facebook-oauth-client-secret",
+    "GOOGLE_OAUTH_CLIENT_ID": "@google-oauth-client-id",
     "GOOGLE_OAUTH_CLIENT_SECRET": "@google-oauth-client-secret",
+    "GITHUB_OAUTH_CLIENT_ID": "@github-oauth-client-id",
     "GITHUB_OAUTH_CLIENT_SECRET": "@github-oauth-client-secret",
-    "SESSION_COOKIE_SECRET": "@session-cookie-secret",
-    "API_TOKEN_SECRET": "@api-token-secret",
+    "TWITTER_OAUTH_CLIENT_SECRET_DEVELOPMENT": "@twitter-oauth-client-secret-development",
+    "FACEBOOK_OAUTH_CLIENT_ID_DEVELOPMENT": "@facebook-oauth-client-id-development",
+    "FACEBOOK_OAUTH_CLIENT_SECRET_DEVELOPMENT": "@facebook-oauth-client-secret-development",
+    "GOOGLE_OAUTH_CLIENT_SECRET_DEVELOPMENT": "@google-oauth-client-secret-development",
+    "GITHUB_OAUTH_CLIENT_SECRET_DEVELOPMENT": "@github-oauth-client-secret-development",
+    "SLACK_SECRET": "@slack-secret",
+    "SLACK_CLIENT_ID": "@slack-client-id",
+    "SLACK_SECRET_DEVELOPMENT": "@slack-secret-development",
     "ALGOLIA_APP_ID": "@algolia-app-id",
     "ALGOLIA_API_SECRET": "@algolia-api-secret",
-    "ENCRYPTION_KEY": "@encryption-key",
-    "SENDGRID_API_KEY": "@sendgrid-api-key"
+    "SENDGRID_API_KEY": "@sendgrid-api-key",
+    "EMAIL_JWT_SIGNATURE": "@email-jwt-signature",
+    "PERSPECTIVE_API_KEY": "@perspective-api-key",
+    "IMGIX_PROXY_SECURITY_KEY": "@imgix-proxy-security-key",
+    "IMGIX_SECURITY_KEY": "@imgix-security-key",
+    "IMGIX_DOMAIN": "@imgix-domain",
+    "IMGIX_PROXY_DOMAIN": "@imgix-proxy-domain",
+    "SESSION_COOKIE_SECRET": "@session-cookie-secret",
+    "API_TOKEN_SECRET": "@api-token-secret",
+    "ENCRYPTION_KEY": "@encryption-key"
   }
 }

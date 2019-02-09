@@ -1,6 +1,6 @@
 {
   "name": "Spectrum",
-  "version": "2.4.30",
+  "version": "2.6.4",
   "license": "BSD-3-Clause",
   "devDependencies": {
     "@babel/preset-flow": "^7.0.0",
@@ -277,7 +277,7 @@
     "webpack-defaults": "webpack-defaults",
     "process:emails:test": "(cd email-template-scripts && python3 inline-html-emails.py && node sendgrid-sync.js)",
     "process:emails:prod": "(cd email-template-scripts && python3 inline-html-emails.py && node sendgrid-sync.js prod)",
-    "process:emails:send": "(cd email-template-scripts && node send-test-emails.js brian@spectrum.chat)"
+    "process:emails:send": "(cd email-template-scripts && node send-test-emails.js brian@chat.grindery.io)"
   },
   "lint-staged": {
     "*.js": [

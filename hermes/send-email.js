@@ -23,8 +23,8 @@ type Options = {
 
 const defaultOptions = {
   from: {
-    email: 'hi@spectrum.chat',
-    name: 'Spectrum',
+    email: 'hi@chat.grindery.io',
+    name: 'Grindery',
   },
   tracking_settings: {
     click_tracking: {

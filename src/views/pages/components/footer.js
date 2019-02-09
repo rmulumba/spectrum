@@ -31,7 +31,7 @@ export default () => {
               <IconButton glyph="github" hoverColor={'text.reverse'} />
             </a>
             <a
-              href="https://twitter.com/withspectrum"
+              href="https://twitter.com/withgrindery"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -48,12 +48,12 @@ export default () => {
           <Link to={`/spectrum`}>Community</Link>
           <Link to={`/spectrum/hugs-n-bugs`}>Bug reports</Link>
           <Link to={`/spectrum/feature-requests`}>Feature requests</Link>
-          <a href="mailto:hi@spectrum.chat">Email support</a>
+          <a href="mailto:hi@chat.grindery.io">Email support</a>
         </Support>
         <Safety>
           <span>Safety</span>
           <a
-            href="https://github.com/withspectrum/code-of-conduct"
+            href="https://www.grindery.io/code-of-conduct"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() =>
@@ -64,8 +64,20 @@ export default () => {
           >
             Code of Conduct
           </a>
-          <Link to="/privacy">Privacy Policy</Link>
-          <Link to="/terms">Terms of Service</Link>
+          <a
+            href="https://www.grindery.io/privacy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Privacy Policy
+          </a>
+          <a
+            href="https://www.grindery.io/terms"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Terms of Service
+          </a>
         </Safety>
       </FooterGrid>
     </Footer>

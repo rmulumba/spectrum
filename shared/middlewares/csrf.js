@@ -2,9 +2,9 @@
 import hostValidation from 'host-validation';
 
 // NOTE(@mxstbr):
-// - Host header only contains the domain, so something like 'build-api-asdf123.now.sh' or 'chat.grindery.io'
-// - Referer header contains the entire URL, so something like 'https://build-api-asdf123.now.sh/forward' or 'https://chat.grindery.io/forward'
-// That means we have to check the Host slightly differently from the Referer to avoid things like 'my-domain-chat.grindery.io' to be able to hack our users
+// - Host header only contains the domain, so something like 'build-api-asdf123.now.sh' or 'learn.keyy.org'
+// - Referer header contains the entire URL, so something like 'https://build-api-asdf123.now.sh/forward' or 'https://learn.keyy.org/forward'
+// That means we have to check the Host slightly differently from the Referer to avoid things like 'my-domain-learn.keyy.org' to be able to hack our users
 
 // Hosts, without http(s):// and paths
 const trustedHosts = [

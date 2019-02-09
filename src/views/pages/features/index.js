@@ -43,7 +43,7 @@ class Features extends React.Component<Props, State> {
   render() {
     return (
       <Wrapper data-cy="features-page">
-        <Head title={'Grindery · Features'} />
+        <Head title={'Keyy · Features'} />
 
         <Section background={'blank'} goop={1} color={'brand.alt'}>
           <Intro>
@@ -96,7 +96,7 @@ class Features extends React.Component<Props, State> {
                 <FeatureName>Location, location, location</FeatureName>
                 <FeatureCopy>
                   <p>
-                    Conversations and communities on Grindery are public,
+                    Conversations and communities on Keyy are public,
                     permalinked, and search engine optimized by default which
                     makes it easy for new members to find and join your
                     community.
@@ -109,7 +109,7 @@ class Features extends React.Component<Props, State> {
                 <FeatureCopy>
                   <p>
                     Skip managing multiple credentials and playing whack-a-mole
-                    with DMs and notifications, Grindery lets you join as many
+                    with DMs and notifications, Keyy lets you join as many
                     communities as you want with only one account.
                   </p>
                 </FeatureCopy>
@@ -146,7 +146,7 @@ class Features extends React.Component<Props, State> {
                 <FeatureName>Real members. Real reputation.</FeatureName>
                 <FeatureCopy>
                   <p>
-                    With Grindery's Rep system, you can see how active and
+                    With Keyy's Rep system, you can see how active and
                     constructive a member is in your community - and globally
                     across communities - which makes it simple to figure out if
                     an issue is a trend or an isolated incident.
@@ -161,7 +161,7 @@ class Features extends React.Component<Props, State> {
                 <FeatureCopy>
                   <p>
                     Identifying a problem is one thing, but it can still be hard
-                    to know how to act on a moderation issue. SAM (Grindery
+                    to know how to act on a moderation issue. SAM (Keyy
                     Assistant Moderator) helps you make those decisions by
                     recommending proven solutions, automatically flagging toxic
                     messages for removal, and even addressing issues with
@@ -202,7 +202,7 @@ class Features extends React.Component<Props, State> {
                 </FeatureName>
                 <FeatureCopy>
                   <p>
-                    With Grindery integrations, your community can go beyond
+                    With Keyy integrations, your community can go beyond
                     engagement to provide a convenient first-touch experience to
                     organically onboard and convert new users.
                   </p>
@@ -246,7 +246,7 @@ class Features extends React.Component<Props, State> {
                     provide help to users efficiently - especially at scale.
                   </p>
                   <p>
-                    Grindery enables you and your users to address issues
+                    Keyy enables you and your users to address issues
                     globally and searchably without the extra duplicated effort.
                   </p>
                 </FeatureCopy>
@@ -256,7 +256,7 @@ class Features extends React.Component<Props, State> {
                 <FeatureName>Collect actionable feedback and ideas</FeatureName>
                 <FeatureCopy>
                   <p>
-                    Grindery's great for collecting feature requests and user
+                    Keyy's great for collecting feature requests and user
                     feedback, and the realtime nature makes it easy for the
                     requests to adapt as you update your product.
                   </p>

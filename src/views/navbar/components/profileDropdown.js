@@ -84,7 +84,7 @@ class ProfileDropdown extends React.Component<ProfileProps, State> {
 
           <Link to={`/about`}>
             <UserProfileDropdownListItem>
-              About Grindery
+              About Keyy
             </UserProfileDropdownListItem>
           </Link>
           <Link to={`/support`}>

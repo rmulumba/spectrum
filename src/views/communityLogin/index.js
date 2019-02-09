@@ -79,7 +79,7 @@ export class Login extends React.Component<Props> {
             <Subtitle>
               {brandedLogin.message && brandedLogin.message.length > 0
                 ? brandedLogin.message
-                : 'Grindery is a place where communities can share, discuss, and grow together. Sign in below to get in on the conversation.'}
+                : 'Keyy is a place where communities can share, discuss, and grow together. Sign in below to get in on the conversation.'}
             </Subtitle>
 
             <LoginButtonSet
@@ -91,7 +91,7 @@ export class Login extends React.Component<Props> {
             />
 
             <CodeOfConduct>
-              By using Grindery, you agree to our{' '}
+              By using Keyy, you agree to our{' '}
               <a
                 href="https://www.grindery.io/code-of-conduct"
                 target="_blank"

@@ -508,7 +508,7 @@ class ThreadContainer extends React.Component<Props, State> {
               >
                 <link
                   rel="canonical"
-                  href={`https://chat.grindery.io/${getThreadLink(thread)}`}
+                  href={`https://learn.keyy.org/${getThreadLink(thread)}`}
                 />
                 {metaImage && (
                   <meta name="twitter:card" content="summary_large_image" />
@@ -525,7 +525,7 @@ class ThreadContainer extends React.Component<Props, State> {
                 />
                 <meta
                   property="article:author"
-                  content={`https://chat.grindery.io/users/@${
+                  content={`https://learn.keyy.org/users/@${
                     thread.author.user.username
                   }`}
                 />

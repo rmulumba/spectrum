@@ -43,7 +43,7 @@ export const getHeader = ({
         <link rel="mask-icon" href="/img/pinned-tab.svg" color="#171A21" />
         <meta name="theme-color" content="#171A21" />
         <link rel="manifest" href="/manifest.json" />
-        <meta property="og:site_name" content="Grindery" />
+        <meta property="og:site_name" content="Keyy" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@withgrindery" />
         <meta name="twitter:image:alt" content="Where communities are built" />

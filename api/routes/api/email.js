@@ -122,7 +122,7 @@ emailRouter.get('/unsubscribe', (req, res) => {
     return res
       .status(400)
       .send(
-        'We ran into an issue unsubscribing you from this email. You can always unsubscribe from this email type in your user settings, or get in touch with us at hi@chat.grindery.io.'
+        'We ran into an issue unsubscribing you from this email. You can always unsubscribe from this email type in your user settings, or get in touch with us at hi@learn.keyy.org.'
       );
   }
 });
@@ -172,7 +172,7 @@ emailRouter.get('/validate', (req, res) => {
         community =>
           IS_PROD
             ? res.redirect(
-                `https://chat.grindery.io/${community.slug}/settings`
+                `https://learn.keyy.org/${community.slug}/settings`
               )
             : res.redirect(`http://localhost:3000/${community.slug}/settings`)
       );
@@ -181,7 +181,7 @@ emailRouter.get('/validate', (req, res) => {
       return res
         .status(400)
         .send(
-          'We ran into an issue validating this email address. You can re-enter your email address in your community settings to resend a confirmation email, or get in touch with us at hi@chat.grindery.io.'
+          'We ran into an issue validating this email address. You can re-enter your email address in your community settings to resend a confirmation email, or get in touch with us at hi@learn.keyy.org.'
         );
     }
   }
@@ -190,7 +190,7 @@ emailRouter.get('/validate', (req, res) => {
   try {
     return updateUserEmail(userId, email).then(user => {
       const rootRedirect = IS_PROD
-        ? `https://chat.grindery.io`
+        ? `https://learn.keyy.org`
         : `http://localhost:3000`;
 
       req.login(user, err => {
@@ -198,7 +198,7 @@ emailRouter.get('/validate', (req, res) => {
           return res
             .status(400)
             .send(
-              'We ran into an issue validating this email address. You can re-enter your email address in your community settings to resend a confirmation email, or get in touch with us at hi@chat.grindery.io.'
+              'We ran into an issue validating this email address. You can re-enter your email address in your community settings to resend a confirmation email, or get in touch with us at hi@learn.keyy.org.'
             );
         }
 
@@ -211,7 +211,7 @@ emailRouter.get('/validate', (req, res) => {
     return res
       .status(400)
       .send(
-        'We ran into an issue validating this email address. You can re-enter your email address in your user settings to resend a confirmation email, or get in touch with us at hi@chat.grindery.io.'
+        'We ran into an issue validating this email address. You can re-enter your email address in your user settings to resend a confirmation email, or get in touch with us at hi@learn.keyy.org.'
       );
   }
 });

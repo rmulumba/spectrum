@@ -105,7 +105,7 @@ class BrandedLogin extends React.Component<Props, State> {
           <SectionTitle>Branded Login</SectionTitle>
           <SectionSubtitle>
             Display a custom login message when people are signing up to
-            Grindery directly from your community’s profile
+            Keyy directly from your community’s profile
           </SectionSubtitle>
 
           <BrandedLoginToggle settings={brandedLogin} id={community.id} />

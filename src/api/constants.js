@@ -12,5 +12,5 @@ export const CLIENT_URL = IS_PROD
   : 'http://localhost:3000';
 
 export const CLIENT_MAIN_DOMAIN = IS_PROD
-  ? `chat.grindery.io`
+  ? `learn.keyy.org`
   : 'localhost:3000';

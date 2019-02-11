@@ -43,6 +43,7 @@
     "SESSION_COOKIE_SECRET": "@session-cookie-secret",
     "API_TOKEN_SECRET": "@api-token-secret",
     "ENCRYPTION_KEY": "@encryption-key",
-    "AMPLITUDE_API_KEY": "@amplitude-api-key"
+    "AMPLITUDE_API_KEY": "@amplitude-api-key",
+    "SENTRY_DSN_CLIENT": "@sentry-dsn-client"
   }
 }

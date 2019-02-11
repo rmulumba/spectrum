@@ -10,17 +10,17 @@ import hostValidation from 'host-validation';
 const trustedHosts = [
   process.env.NOW_URL &&
     new RegExp(`^${process.env.NOW_URL.replace('https://', '')}$`),
-  /^chat\.grindery\.io$/,
+  /^learn\.keyy\.org$/,
   // All subdomains
-  /^.*\.chat\.grindery\.io$/,
+  /^.*\.learn\.keyy\.org$/,
 ].filter(Boolean);
 
 // Referers, with http(s):// and paths
 const trustedReferers = [
   process.env.NOW_URL && new RegExp(`^${process.env.NOW_URL}($|\/.*)`),
-  /^https:\/\/chat\.grindery\.io($|\/.*)/,
+  /^https:\/\/learn\.keyy\.org($|\/.*)/,
   // All subdomains
-  /^https:\/\/.*\.chat\.grindery\.io($|\/.*)/,
+  /^https:\/\/.*\.learn\.keyy\.org($|\/.*)/,
 ].filter(Boolean);
 
 export default hostValidation({

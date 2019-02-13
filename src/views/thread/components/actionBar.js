@@ -289,7 +289,7 @@ class ActionBar extends React.Component<Props, State> {
                   <a
                     href={`https://www.facebook.com/sharer/sharer.php?t=${encodeURIComponent(
                       thread.content.title
-                    )}&u=https://spectrum.chat/${getThreadLink(thread)}`}
+                    )}&u=https://chat.grindery.io/${getThreadLink(thread)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -310,11 +310,11 @@ class ActionBar extends React.Component<Props, State> {
                   data-cy="thread-tweet-button"
                 >
                   <a
-                    href={`https://twitter.com/share?url=https://spectrum.chat/${getThreadLink(
+                    href={`https://twitter.com/share?url=https://chat.grindery.io/${getThreadLink(
                       thread
                     )}&text=${encodeURIComponent(
                       thread.content.title
-                    )} on @withspectrum`}
+                    )} on @withgrindery`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -359,7 +359,7 @@ class ActionBar extends React.Component<Props, State> {
               <ShareButtons>
                 <Clipboard
                   style={{ background: 'none' }}
-                  data-clipboard-text={`https://spectrum.chat/${getThreadLink(
+                  data-clipboard-text={`https://chat.grindery.io/${getThreadLink(
                     thread
                   )}`}
                   onSuccess={() =>

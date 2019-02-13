@@ -58,7 +58,7 @@ app.use('/api', (req: express$Request, res: express$Response) => {
   const redirectUrl = `${req.baseUrl}${req.path}`;
   res.redirect(
     req.method === 'POST' || req.xhr ? 307 : 301,
-    `https://spectrum.chat${redirectUrl}`
+    `https://chat.grindery.io${redirectUrl}`
   );
 });
 
@@ -66,7 +66,7 @@ app.use('/auth', (req: express$Request, res: express$Response) => {
   const redirectUrl = `${req.baseUrl}${req.path}`;
   res.redirect(
     req.method === 'POST' || req.xhr ? 307 : 301,
-    `https://spectrum.chat${redirectUrl}`
+    `https://chat.grindery.io${redirectUrl}`
   );
 });
 
@@ -74,7 +74,7 @@ app.use('/websocket', (req: express$Request, res: express$Response) => {
   const redirectUrl = `${req.baseUrl}${req.path}`;
   res.redirect(
     req.method === 'POST' || req.xhr ? 307 : 301,
-    `https://spectrum.chat${redirectUrl}`
+    `https://chat.grindery.io${redirectUrl}`
   );
 });
 
@@ -100,7 +100,7 @@ passport.serializeUser((user, done) => {
 
 // NOTE(@mxstbr): `data` used to be just the userID, but is now the full user data
 // to avoid having to go to the db on every single request. We have to handle both
-// cases here, as more and more users use Spectrum again we go to the db less and less
+// cases here, as more and more users use Grindery again we go to the db less and less
 passport.deserializeUser((data, done) => {
   // Fast path: try to JSON.parse the data if it works, we got the user data, yay!
   try {
@@ -185,6 +185,27 @@ if (process.env.NODE_ENV === 'development') {
     express.static(path.resolve(__dirname, '..', 'public'), { index: false })
   );
 }
+
+app.get('/', (req: express$Request, res, next) => {
+  if (req.hostname.toLowerCase() !== 'chat.grindery.io') {
+    return next();
+  }
+  if (req.session && req.user && !req.query.t) {
+    // Show notification page by default
+    return res.redirect('/notifications');
+  } else {
+    return res.redirect('/login');
+  }
+});
+app.get('/privacy', (req: express$Request, res) => {
+  return res.redirect('https://www.grindery.io/privacy');
+});
+app.get('/terms', (req: express$Request, res) => {
+  return res.redirect('https://www.grindery.io/terms');
+});
+app.get('/about', (req: express$Request, res) => {
+  return res.redirect('https://www.grindery.io/');
+});
 
 app.get('*', (req: express$Request, res, next) => {
   // Electron requests should only be client-side rendered

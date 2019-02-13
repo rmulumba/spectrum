@@ -85,13 +85,13 @@ const CommunitySearchWrapper = props => {
       <ThisContent>
         <ThisTagline>Find a community for you!</ThisTagline>
         <ThisCopy>
-          Try searching for topics like "crypto" or for products like "React"
+          Try searching for topics like "start" or for products like "Grindery"
         </ThisCopy>
         {props.children}
         <SecondaryContent>
           <SecondaryTagline>...or create your own community</SecondaryTagline>
           <SecondaryCopy>
-            Building communities on Spectrum is easy and free!
+            Building communities on Grindery is easy and free!
           </SecondaryCopy>
           {props.currentUser ? (
             <Link

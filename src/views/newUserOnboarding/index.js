@@ -166,9 +166,9 @@ class NewUserOnboarding extends Component<Props, State> {
 
     const steps = {
       setUsername: {
-        title: 'Welcome to Spectrum!',
+        title: 'Welcome to Grindery!',
         subtitle:
-          'Spectrum is a place where communities can share, discuss, and grow together. To get started, create a username.',
+          'Grindery is a place where communities can share, discuss, and grow together. To get started, create a username.',
         emoji: '👋',
       },
       joinFirstCommunity: {
@@ -181,7 +181,7 @@ class NewUserOnboarding extends Component<Props, State> {
       discoverCommunities: {
         title: 'Find your people.',
         subtitle:
-          'There are hundreds of communities on Spectrum to explore. Check out some of our favorites below or search for topics.',
+          'There are hundreds of communities on Grindery to explore. Check out some of our favorites below or search for topics.',
         emoji: null,
       },
       appsUpsell: {

@@ -12,7 +12,7 @@ var truncate = require('./truncate');
 var striptags = require('striptags');
 
 var DEFAULT_META = {
-  title: 'Spectrum',
+  title: 'Grindery',
   description: 'Where communities live.',
 };
 
@@ -70,7 +70,7 @@ function setDefault(input /*: MaybeMeta */) /*: Meta */ {
   // prefix "On spectrum" to the description
   // Otherwise you end up with "SpecFM | Where communities live"
   if (input.title && !input.description) {
-    description = 'on Spectrum, ' + DEFAULT_META.description.toLowerCase();
+    description = 'on Grindery, ' + DEFAULT_META.description.toLowerCase();
   }
   return {
     title: title,
@@ -90,8 +90,8 @@ function generateMetaInfo(input /*: Input */) /*: Meta */ {
   switch (type) {
     case 'explore': {
       return {
-        title: 'Explore · Spectrum',
-        description: 'Explore some of the communities on Spectrum',
+        title: 'Explore · Grindery',
+        description: 'Explore some of the communities on Grindery',
       };
     }
     case 'thread': {

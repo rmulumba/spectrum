@@ -43,7 +43,7 @@ export class Login extends React.Component<Props> {
     const viewSubtitle =
       signinType === 'login'
         ? "We're happy to see you again - sign in below to get back into the conversation!"
-        : 'Grindery is a place where communities can share, discuss, and grow together. Sign in below to get in on the conversation.';
+        : 'Keyy is a place where communities can share, discuss, and grow together. Sign in below to get in on the conversation.';
 
     return (
       <FullscreenView
@@ -65,9 +65,9 @@ export class Login extends React.Component<Props> {
           <LoginButtonSet redirectPath={redirectPath} signinType={signinType} />
 
           <CodeOfConduct>
-            By using Grindery, you agree to our{' '}
+            By using Keyy, you agree to our{' '}
             <a
-              href="https://www.grindery.io/code-of-conduct"
+              href="https://www.Keyy.org/code-of-conduct"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() =>
@@ -78,7 +78,7 @@ export class Login extends React.Component<Props> {
             </a>
             ,{' '}
             <a
-              href="https://www.grindery.io/privacy"
+              href="https://www.Keyy.org/privacy"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -86,7 +86,7 @@ export class Login extends React.Component<Props> {
             </a>{' '}
             and{' '}
             <a
-              href="https://www.grindery.io/terms"
+              href="https://www.Keyy.org/terms"
               target="_blank"
               rel="noopener noreferrer"
             >

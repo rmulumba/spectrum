@@ -170,7 +170,7 @@ const externalRedirect = url => () => {
 };
 
 // Key can be a slug or a domain name. Must be all lowercased.
-// If slug is used, the final domain will be SLUG.chat.grindery.io
+// If slug is used, the final domain will be SLUG.learn.keyy.org
 // No need to add alias if desired slug is the same as community slug,
 // like `startup-framework`
 const COMMUNITY_DOMAIN_ALIASES = {
@@ -281,8 +281,8 @@ class Routes extends React.Component<Props> {
           <ScrollManager>
             <Body>
               <Head
-                title="Ongoing Maintenance - Grindery"
-                description="Grindery is currently undergoing scheduled maintenance downtime. Please check https://twitter.com/withgrindery for ongoing updates."
+                title="Ongoing Maintenance - Keyy"
+                description="Keyy is currently undergoing scheduled maintenance downtime. Please check https://twitter.com/withkeyy for ongoing updates."
               />
               <Maintenance />
             </Body>
@@ -329,7 +329,7 @@ class Routes extends React.Component<Props> {
                 {isCommunityDomain ? null : (
                   <Route
                     path="/about"
-                    render={externalRedirect('https://www.grindery.io/')}
+                    render={externalRedirect('https://www.Keyy.org/')}
                   />
                 )}
                 {isCommunityDomain ? null : (
@@ -338,32 +338,32 @@ class Routes extends React.Component<Props> {
                 {isCommunityDomain ? null : (
                   <Route
                     path="/terms"
-                    render={externalRedirect('https://www.grindery.io/terms')}
+                    render={externalRedirect('https://www.Keyy.org/terms')}
                   />
                 )}
                 {isCommunityDomain ? null : (
                   <Route
                     path="/privacy"
-                    render={externalRedirect('https://www.grindery.io/privacy')}
+                    render={externalRedirect('https://www.Keyy.org/privacy')}
                   />
                 )}
                 {isCommunityDomain ? null : (
                   <Route
                     path="/terms.html"
-                    render={externalRedirect('https://www.grindery.io/terms')}
+                    render={externalRedirect('https://www.Keyy.org/terms')}
                   />
                 )}
                 {isCommunityDomain ? null : (
                   <Route
                     path="/privacy.html"
-                    render={externalRedirect('https://www.grindery.io/privacy')}
+                    render={externalRedirect('https://www.Keyy.org/privacy')}
                   />
                 )}
                 {isCommunityDomain ? null : (
                   <Route
                     path="/code-of-conduct"
                     render={externalRedirect(
-                      'https://www.grindery.io/code-of-conduct'
+                      'https://www.Keyy.org/code-of-conduct'
                     )}
                   />
                 )}

@@ -15,11 +15,11 @@ const Share = ({ community, history, onboarding }) => {
     <div>
       <ButtonRow>
         <a
-          href={`https://www.facebook.com/sharer/sharer.php?u=https://chat.grindery.io/${encodeURIComponent(
+          href={`https://www.facebook.com/sharer/sharer.php?u=https://learn.keyy.org/${encodeURIComponent(
             community.slug
           )}&t=Come hang out with me in the ${
             community.name
-          } community on Grindery!`}
+          } community on Keyy!`}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -35,7 +35,7 @@ const Share = ({ community, history, onboarding }) => {
         <a
           href={`https://twitter.com/share?text=Come hang out with me in the ${
             community.name
-          } community on @withgrindery!&url=https://chat.grindery.io/${encodeURIComponent(
+          } community on @withkeyy!&url=https://learn.keyy.org/${encodeURIComponent(
             community.slug
           )}`}
           target="_blank"
@@ -54,10 +54,10 @@ const Share = ({ community, history, onboarding }) => {
 
       <Clipboard
         component="div"
-        data-clipboard-text={`https://chat.grindery.io/${community.slug}`}
+        data-clipboard-text={`https://learn.keyy.org/${community.slug}`}
       >
         <InputRow>
-          <Input>{`https://chat.grindery.io/${community.slug}`}</Input>
+          <Input>{`https://learn.keyy.org/${community.slug}`}</Input>
         </InputRow>
       </Clipboard>
 

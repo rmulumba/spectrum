@@ -31,7 +31,7 @@ export default () => {
               <IconButton glyph="github" hoverColor={'text.reverse'} />
             </a>
             <a
-              href="https://twitter.com/withgrindery"
+              href="https://twitter.com/withkeyy"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -48,12 +48,12 @@ export default () => {
           <Link to={`/spectrum`}>Community</Link>
           <Link to={`/spectrum/hugs-n-bugs`}>Bug reports</Link>
           <Link to={`/spectrum/feature-requests`}>Feature requests</Link>
-          <a href="mailto:hi@chat.grindery.io">Email support</a>
+          <a href="mailto:hi@learn.keyy.org">Email support</a>
         </Support>
         <Safety>
           <span>Safety</span>
           <a
-            href="https://www.grindery.io/code-of-conduct"
+            href="https://www.Keyy.org/code-of-conduct"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() =>
@@ -65,14 +65,14 @@ export default () => {
             Code of Conduct
           </a>
           <a
-            href="https://www.grindery.io/privacy"
+            href="https://www.Keyy.org/privacy"
             target="_blank"
             rel="noopener noreferrer"
           >
             Privacy Policy
           </a>
           <a
-            href="https://www.grindery.io/terms"
+            href="https://www.Keyy.org/terms"
             target="_blank"
             rel="noopener noreferrer"
           >

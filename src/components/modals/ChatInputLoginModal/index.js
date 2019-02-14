@@ -58,9 +58,9 @@ class ChatInputLoginModal extends React.Component<Props> {
             />
 
             <CodeOfConduct>
-              By using Grindery, you agree to our{' '}
+              By using Keyy, you agree to our{' '}
               <a
-                href="https://www.grindery.io/code-of-conduct"
+                href="https://www.Keyy.org/code-of-conduct"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() =>

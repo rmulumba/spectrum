@@ -436,3 +436,7 @@ export const SkipLink = Tab.withComponent('a').extend`
     width: auto;
   }
 `;
+
+export const LogoPadding = styled.div`
+  padding: 8px;
+`;

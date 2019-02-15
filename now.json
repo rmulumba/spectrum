@@ -44,13 +44,6 @@
     "API_TOKEN_SECRET": "@api-token-secret",
     "ENCRYPTION_KEY": "@encryption-key",
     "AMPLITUDE_API_KEY": "@amplitude-api-key",
-    "SENTRY_DSN_CLIENT": "@sentry-dsn-client",
-    "TWITTER_OAUTH_CLIENT_SECRET_DEVELOPMENT": "@twitter-oauth-client-secret-development",
-    "FACEBOOK_OAUTH_CLIENT_ID_DEVELOPMENT": "@facebook-oauth-client-id-development",
-    "FACEBOOK_OAUTH_CLIENT_SECRET_DEVELOPMENT": "@facebook-oauth-client-secret-development",
-    "GOOGLE_OAUTH_CLIENT_SECRET_DEVELOPMENT": "@google-oauth-client-secret-development",
-    "GITHUB_OAUTH_CLIENT_SECRET_DEVELOPMENT": "@github-oauth-client-secret-development",
-    "SLACK_SECRET_DEVELOPMENT": "@slack-secret-development",
-    "AMPLITUDE_API_KEY_DEVELOPMENT": "@amplitude-api-key-development"
+    "SENTRY_DSN_CLIENT": "@sentry-dsn-client"
   }
 }

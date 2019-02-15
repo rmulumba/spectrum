@@ -232,6 +232,12 @@ export const Logo = styled(Tab)`
     `} &:hover {
     box-shadow: none;
   }
+  
+  svg {
+    width: 55px;
+    height: 52px;
+    margin: 3px 0 0;
+  }
 
   @media (max-width: 768px) {
     display: none;

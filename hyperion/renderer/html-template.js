@@ -47,6 +47,12 @@ export const getHeader = ({
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@withgrindery" />
         <meta name="twitter:image:alt" content="Where communities are built" />
+        <style>
+            body {
+            max-width: 100%;
+            overflow-x: hidden;
+            }       
+        </style>
         <link
           rel="apple-touch-icon-precomposed"
           sizes="57x57"

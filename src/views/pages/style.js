@@ -567,6 +567,12 @@ export const LogoTab = styled(Tab)`
       display: none;
     }
   }
+  
+  svg {
+    width: 55px;
+    height: 52px;
+    margin: 3px 0 0;
+  }
 `;
 
 export const DropdownLink = styled(Link)`

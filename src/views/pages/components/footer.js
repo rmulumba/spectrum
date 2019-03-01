@@ -53,7 +53,7 @@ export default () => {
         <Safety>
           <span>Safety</span>
           <a
-            href="https://www.Keyy.org/code-of-conduct"
+            href="https://learn.keyy.org/keyy-support/getting-started/keyys-code-of-conduct~87204628-d977-4945-af9d-2f60d3e38c9f"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() =>
@@ -65,14 +65,14 @@ export default () => {
             Code of Conduct
           </a>
           <a
-            href="https://www.Keyy.org/privacy"
+            href="https://www.keyy.org/privacypolicy"
             target="_blank"
             rel="noopener noreferrer"
           >
             Privacy Policy
           </a>
           <a
-            href="https://www.Keyy.org/terms"
+            href="https://www.keyy.org/termsofservice"
             target="_blank"
             rel="noopener noreferrer"
           >

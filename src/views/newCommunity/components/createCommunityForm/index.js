@@ -644,7 +644,7 @@ class CreateCommunityForm extends React.Component<Props, State> {
             <span>
               I have read the{' '}
               <a
-                href="https://www.Keyy.org/code-of-conduct"
+                href="https://learn.keyy.org/keyy-support/getting-started/keyys-code-of-conduct~87204628-d977-4945-af9d-2f60d3e38c9f"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() =>

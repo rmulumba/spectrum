@@ -198,10 +198,10 @@ app.get('/', (req: express$Request, res, next) => {
   }
 });
 app.get('/privacy', (req: express$Request, res) => {
-  return res.redirect('https://www.Keyy.org/privacy');
+  return res.redirect('https://www.keyy.org/privacypolicy');
 });
 app.get('/terms', (req: express$Request, res) => {
-  return res.redirect('https://www.Keyy.org/terms');
+  return res.redirect('https://www.keyy.org/termsofservice');
 });
 app.get('/about', (req: express$Request, res) => {
   return res.redirect('https://www.Keyy.org/');

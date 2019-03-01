@@ -338,32 +338,32 @@ class Routes extends React.Component<Props> {
                 {isCommunityDomain ? null : (
                   <Route
                     path="/terms"
-                    render={externalRedirect('https://www.Keyy.org/terms')}
+                    render={externalRedirect('https://www.keyy.org/termsofservice')}
                   />
                 )}
                 {isCommunityDomain ? null : (
                   <Route
                     path="/privacy"
-                    render={externalRedirect('https://www.Keyy.org/privacy')}
+                    render={externalRedirect('https://www.keyy.org/privacypolicy')}
                   />
                 )}
                 {isCommunityDomain ? null : (
                   <Route
                     path="/terms.html"
-                    render={externalRedirect('https://www.Keyy.org/terms')}
+                    render={externalRedirect('https://www.keyy.org/termsofservice')}
                   />
                 )}
                 {isCommunityDomain ? null : (
                   <Route
                     path="/privacy.html"
-                    render={externalRedirect('https://www.Keyy.org/privacy')}
+                    render={externalRedirect('https://www.keyy.org/privacypolicy')}
                   />
                 )}
                 {isCommunityDomain ? null : (
                   <Route
                     path="/code-of-conduct"
                     render={externalRedirect(
-                      'https://www.Keyy.org/code-of-conduct'
+                      'https://learn.keyy.org/keyy-support/getting-started/keyys-code-of-conduct~87204628-d977-4945-af9d-2f60d3e38c9f'
                     )}
                   />
                 )}

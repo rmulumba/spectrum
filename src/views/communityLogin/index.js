@@ -84,7 +84,7 @@ export class Login extends React.Component<Props> {
             <Subtitle>
               {brandedLogin.message && brandedLogin.message.length > 0
                 ? brandedLogin.message
-                : 'Keyy is a place where communities can share, discuss, and grow together. Sign in below to get in on the conversation.'}
+                : 'Keyy is a place where learning groups can share, discuss, and grow together. Sign in below to get in on the conversation.'}
             </Subtitle>
 
             <LoginButtonSet

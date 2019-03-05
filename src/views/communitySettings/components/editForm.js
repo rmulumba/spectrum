@@ -246,16 +246,16 @@ class EditForm extends React.Component<Props, State> {
     const message = (
       <div>
         <p>
-          Are you sure you want to delete your community, <b>{name}</b>?
+          Are you sure you want to delete your learning group, <b>{name}</b>?
         </p>{' '}
         <p>
           <b>{communityData.metaData.members} members</b> will be removed from
-          the community and the{' '}
+          the learning group and the{' '}
           <b>{communityData.metaData.channels} channels</b> you’ve created will
           be deleted.
         </p>
         <p>
-          All threads, messages, reactions, and media shared in your community
+          All threads, messages, reactions, and media shared in your learning group
           will be deleted.
         </p>
         <p>This cannot be undone.</p>
@@ -297,7 +297,7 @@ class EditForm extends React.Component<Props, State> {
     if (!community) {
       return (
         <SectionCard>
-          <FormTitle>This community doesn’t exist yet.</FormTitle>
+          <FormTitle>This learning group doesn’t exist yet.</FormTitle>
           <Description>Want to make it?</Description>
           <Actions>
             <Button>Create</Button>
@@ -308,7 +308,7 @@ class EditForm extends React.Component<Props, State> {
 
     return (
       <SectionCard>
-        <SectionTitle>Community Settings</SectionTitle>
+        <SectionTitle>Learning Group Settings</SectionTitle>
         <Form onSubmit={this.save}>
           <ImageInputWrapper>
             {coverPhoto && !/default_images/.test(coverPhoto) && (
@@ -344,7 +344,7 @@ class EditForm extends React.Component<Props, State> {
           </UnderlineInput>
 
           {nameError && (
-            <Error>Community names can be up to 20 characters long.</Error>
+            <Error>Learning group names can be up to 20 characters long.</Error>
           )}
 
           <TextArea
@@ -360,7 +360,7 @@ class EditForm extends React.Component<Props, State> {
             onChange={this.changeWebsite}
             dataCy="community-settings-website-input"
           >
-            Optional: Add your community’s website
+            Optional: Add your learning group’s website
           </Input>
 
           <Actions>

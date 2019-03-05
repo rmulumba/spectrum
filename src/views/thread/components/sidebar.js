@@ -103,7 +103,7 @@ class Sidebar extends React.Component<Props> {
                   </SidebarSectionTitle>
                   <SidebarSectionBody>
                     Sign in to join this conversation, and others like it, in
-                    the communities you care about.
+                    the learning groups you care about.
                   </SidebarSectionBody>
                   <SidebarSectionAuth>
                     <Link to={loginUrl}>

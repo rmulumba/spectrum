@@ -68,10 +68,10 @@ const Share = ({ community, history, onboarding }) => {
             or manage your settings at any time
           </Description>
           <a href={`/${community.slug}/settings`}>
-            <OutlineButton>View community settings</OutlineButton>
+            <OutlineButton>View learning group settings</OutlineButton>
           </a>
           <a href={`/${community.slug}`}>
-            <Button>Go to my community</Button>
+            <Button>Go to my learning group</Button>
           </a>
         </ButtonRow>
       )}

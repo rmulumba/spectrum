@@ -37,7 +37,7 @@ class Features extends React.Component<Props, State> {
               <Heading>Keyy for Mac</Heading>
 
               <Copy style={{ marginTop: '8px', marginBottom: '40px' }}>
-                Keep up with your communities without distractions.
+                Keep up with your learning group without distractions.
               </Copy>
 
               <ActionsContainer>

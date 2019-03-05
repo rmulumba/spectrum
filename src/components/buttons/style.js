@@ -80,7 +80,7 @@ export const StyledSolidButton = styled.button`
             `props.theme.${props.hoverColor ? props.hoverColor : 'brand.alt'}`
           )};
   }
-
+  
   &:active {
     box-shadow: ${props =>
       props.disabled

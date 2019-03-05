@@ -280,7 +280,7 @@ class Search extends React.Component<Props, State> {
             }}
             type="text"
             value={searchString}
-            placeholder="Search for communities or topics..."
+            placeholder="Search for learning groups or topics..."
             onChange={this.handleChange}
             onFocus={this.onFocus}
             autoFocus

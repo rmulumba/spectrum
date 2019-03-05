@@ -242,7 +242,7 @@ class Navbar extends React.Component<Props, State> {
               {currentUser &&
                 typeof currentUser.totalReputation === 'number' && (
                   <Reputation>
-                    <Icon glyph="rep" />{' '}
+                    <Icon glyph="keyy-coin" />{' '}
                     {truncateNumber(
                       parseInt(currentUser.totalReputation, 10),
                       1
@@ -271,7 +271,7 @@ class Navbar extends React.Component<Props, State> {
             onClick={() => this.trackNavigationClick('profile')}
           >
             <Icon glyph="profile" />
-            <Label>Profile</Label>
+            <Label>Portfolio</Label>
           </ProfileTab>
         </Nav>
       );

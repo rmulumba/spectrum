@@ -115,20 +115,20 @@ class NewCommunity extends React.Component<Props, State> {
     const { activeStep, community } = this.state;
     switch (activeStep) {
       case 1: {
-        return community ? 'Update your community' : 'Create a community';
+        return community ? 'Update your learning group' : 'Create a learning group';
       }
       case 2: {
         return `Invite people${
           community
-            ? ` to the ${community.name} community`
-            : ' to your community'
+            ? ` to the ${community.name} learning group`
+            : ' to your learning group'
         }`;
       }
       case 3: {
         return 'Done!';
       }
       default: {
-        return 'Create a community';
+        return 'Create a learning group';
       }
     }
   };
@@ -137,18 +137,18 @@ class NewCommunity extends React.Component<Props, State> {
     const { activeStep, community } = this.state;
     switch (activeStep) {
       case 1: {
-        return 'Creating a community on Keyy is free, forever. To get started, tell us more about your community below.';
+        return 'Creating a learning group on Keyy is free, forever. To get started, tell us more about your learning group below.';
       }
       case 2: {
         return `Kickstart ${
-          community ? `the ${community.name} community` : 'your community'
+          community ? `the ${community.name} learning group` : 'your learning group'
         } by inviting an existing Slack team or by inviting a handful of folks directly by email. You'll be able to invite more people at any point in the future, too, if you're not quite ready.`;
       }
       case 3: {
-        return "You're all set! Your community is live - go check it out, start posting threads, and get the conversations started!";
+        return "You're all set! Your learning group is live - go check it out, start posting threads, and get the conversations started!";
       }
       default: {
-        return 'Create a community';
+        return 'Create a learning group';
       }
     }
   };
@@ -179,7 +179,7 @@ class NewCommunity extends React.Component<Props, State> {
       return (
         <AppViewWrapper>
           <Titlebar
-            title={'Create a Community'}
+            title={'Create a learning group'}
             provideBack={true}
             backRoute={'/'}
             noComposer
@@ -249,7 +249,7 @@ class NewCommunity extends React.Component<Props, State> {
       return (
         <AppViewWrapper>
           <Titlebar
-            title={'Create a Community'}
+            title={'Create a Learning Group'}
             provideBack={true}
             backRoute={'/'}
             noComposer
@@ -261,10 +261,10 @@ class NewCommunity extends React.Component<Props, State> {
                 {user.pendingEmail ? 'Confirm' : 'Add'} Your Email Address
               </Title>
               <Description>
-                Before creating a community, please{' '}
+                Before creating a learning group, please{' '}
                 {user.pendingEmail ? 'confirm' : 'add'} your email address. This
                 email address will be used in the future to send you updates
-                about your community, including moderation events.
+                about your learning group, including moderation events.
               </Description>
 
               <div style={{ padding: '0 24px 24px' }}>
@@ -280,7 +280,7 @@ class NewCommunity extends React.Component<Props, State> {
       return (
         <AppViewWrapper>
           <Titlebar
-            title={'Create a Community'}
+            title={'Create a Learning Group'}
             provideBack={true}
             backRoute={'/'}
             noComposer

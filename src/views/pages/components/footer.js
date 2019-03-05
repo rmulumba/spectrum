@@ -45,7 +45,7 @@ export default () => {
         </Apps>
         <Support>
           <span>Support</span>
-          <Link to={`/spectrum`}>Community</Link>
+          <Link to={`/spectrum`}>Learning group</Link>
           <Link to={`/spectrum/hugs-n-bugs`}>Bug reports</Link>
           <Link to={`/spectrum/feature-requests`}>Feature requests</Link>
           <a href="mailto:hi@learn.keyy.org">Email support</a>

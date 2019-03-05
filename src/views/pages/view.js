@@ -150,15 +150,15 @@ export const Overview = (props: Props) => {
     <Section background="constellations" goop={2}>
       <ThisContent>
         <ThisText>
-          <ThisTagline>The community platform for the future.</ThisTagline>
-          <ThisCopy>The internet was built for communities.</ThisCopy>
+          <ThisTagline>The learning group platform for the future.</ThisTagline>
+          <ThisCopy>The internet was built for learning groups.</ThisCopy>
           <ThisCopy>
-            But, as the web has changed and improved radically, community
+            But, as the web has changed and improved radically, learning group
             software has hardly improved since the heyday of messageboards and
             IRC.
           </ThisCopy>
           <ThisCopy>
-            Keyy makes it easy to grow safe, successful online communities that
+            Keyy makes it easy to grow safe, successful online learning groups that
             are built to last.
           </ThisCopy>
           <Actions>
@@ -173,7 +173,7 @@ export const Overview = (props: Props) => {
               onClick={() => track(events.HOME_PAGE_CREATE_COMMUNITY_CLICKED)}
             >
               <ThisSecondaryCTA icon="plus-fill">
-                Create your community
+                Create your learning group
               </ThisSecondaryCTA>
             </Link>
           </Actions>
@@ -257,8 +257,8 @@ export const Centralized = (props: Props) => {
         <Text>
           <ThisTagline>Grow together</ThisTagline>
           <ThisCopy>
-            By building on Keyy, communities become easily discoverable through
-            search, curation, and even other community members.
+            By building on Keyy, learning groups become easily discoverable through
+            search, curation, and even other learning group members.
           </ThisCopy>
           <ThisCopy>
             It also means no more managing multiple logins or playing
@@ -271,7 +271,7 @@ export const Centralized = (props: Props) => {
                 icon="explore"
                 onClick={() => track(events.HOME_PAGE_EXPLORE_CLICKED)}
               >
-                Explore communities
+                Explore learning groups
               </ThisPrimaryCTA>
             </Link>
           </Actions>
@@ -327,7 +327,7 @@ export const CommunitySearch = (props: Props) => {
   return (
     <Section goop={4} background="bright">
       <ThisContent>
-        <ThisTagline>Find a community for you!</ThisTagline>
+        <ThisTagline>Find a learning group for you!</ThisTagline>
         <ThisCopy>
           Try searching for topics like “start” or for products like “Keyy”!
         </ThisCopy>
@@ -451,7 +451,7 @@ export const Sell = (props: Props) => {
                 answering the same question over and over.
               </BulletCopy>
               <BulletCopy>
-                Now your team can have conversations with your community as a
+                Now your team can have conversations with your learning group as a
                 whole and chat privately when a particular issue is sensitive.
               </BulletCopy>
             </Bullet>
@@ -487,7 +487,7 @@ export const Sell = (props: Props) => {
           onClick={() => track(events.HOME_PAGE_CREATE_COMMUNITY_CLICKED)}
         >
           <PrimaryCTA icon="plus-fill">
-            Start building your community
+            Start building your learning group
           </PrimaryCTA>
         </Link>
       </Actions>
@@ -657,7 +657,7 @@ export const Yours = (props: Props) => {
               </Rule>
               <Pullquote>
                 Keyy will take the place that Reddit used to have a long time
-                ago for communities (especially tech) to freely share ideas and
+                ago for learning groups (especially tech) to freely share ideas and
                 interact. Except realtime and trolling-free
               </Pullquote>
               <Signature to="/users/rauchg">
@@ -674,7 +674,7 @@ export const Yours = (props: Props) => {
               </Rule>
               <Pullquote>
                 Keyy is definitely a product worth looking out for. Huge fan and
-                been lovely to be a part of the unique communities.
+                been lovely to be a part of the unique learning groups.
               </Pullquote>
               <Signature to="/users/tayler-m-odea">
                 <UserAvatar
@@ -699,7 +699,7 @@ export const Yours = (props: Props) => {
               onClick={() => track(events.HOME_PAGE_CREATE_COMMUNITY_CLICKED)}
             >
               <ThisSecondaryCTA icon="explore">
-                Explore communities
+                Explore learning groups
               </ThisSecondaryCTA>
             </Link>
           </Actions>

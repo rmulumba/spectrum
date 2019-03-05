@@ -179,7 +179,7 @@ const UserWithData = ({
           <CoverSubtitle center>
             {user.username && `@${user.username}`}
             <Reputation
-              tipText={'Total rep across all communities'}
+              tipText={'Total Keyy Coin across all learning groups'}
               size={'large'}
               reputation={
                 user.contextPermissions
@@ -228,7 +228,7 @@ const UserWithData = ({
                     <Subtitle>
                       @{user.username}
                       <Reputation
-                        tipText={'Total rep across all communities'}
+                        tipText={'Total Keyy Coin across all learning groups'}
                         size={'large'}
                         reputation={
                           user.contextPermissions

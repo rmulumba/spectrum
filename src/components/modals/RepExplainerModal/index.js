@@ -52,18 +52,18 @@ class RepExplainerModal extends React.Component<Props> {
         >
           <Section>
             <IconContainer>
-              <Icon glyph={'rep'} size={64} />
+              <Icon glyph={'keyy-coin'} size={64} />
             </IconContainer>
-            <Title>Keyy Rep</Title>
+            <Title>Keyy Coin</Title>
             <Subtitle>
-              Rep provides context about a person's reputation in a community.
-              Rep is earned by starting and joining productive conversations.
+              Keyy Coin provides context about a person's reputation in a community.
+              Keyy Coin is earned by starting and joining productive conversations.
             </Subtitle>
 
             {reputation <= 0 ? (
               currentUser ? (
                 <Rep>
-                  You don't have any rep yet. Earn rep by starting a
+                  You don't have any Keyy Coin yet. Earn Keyy Coin by starting a
                   conversation or replying to other people in your communities.
                 </Rep>
               ) : (

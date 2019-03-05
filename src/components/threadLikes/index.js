@@ -56,9 +56,9 @@ class LikeButtonPure extends React.Component<LikeButtonProps> {
       <LikeButtonWrapper
         hasReacted={hasReacted}
         onClick={this.handleClick}
-        icon={'thumbsup'}
+        icon={'aha'}
       >
-        {hasReacted ? 'Liked' : 'Like'}
+        {hasReacted ? 'Aha!' : 'Aha!'}
         <CurrentCount>{count}</CurrentCount>
       </LikeButtonWrapper>
     );
@@ -83,9 +83,9 @@ export const LikeCount = (props: LikeCountProps) => {
   return (
     <LikeCountWrapper active={active}>
       <Icon
-        glyph={'thumbsup'}
+        glyph={'aha'}
         size={24}
-        tipText={`${count} likes`}
+        tipText={`${count} aha`}
         tipLocation={'top-right'}
       />
       <CurrentCount>{count || '0'}</CurrentCount>

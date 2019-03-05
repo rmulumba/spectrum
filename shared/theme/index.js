@@ -9,11 +9,11 @@ export const theme = {
     inactive: '#DFE7EF',
   },
   brand: {
-    default: '#4400CC',
-    alt: '#7B16FF',
+    default: '#34D1C3',
+    alt: '#34D1C3',
     wash: '#E8E5FF',
     border: '#DDD9FF',
-    dark: '#2A0080',
+    dark: '#34D1C3',
   },
   generic: {
     default: '#E6ECF7',
@@ -42,11 +42,11 @@ export const theme = {
     },
   },
   space: {
-    default: '#0062D6',
-    alt: '#1CD2F2',
+    default: '#29A79C',
+    alt: '#99E8E1',
     wash: '#E5F0FF',
-    border: '#BDD8FF',
-    dark: '#0F015E',
+    border: '#D6F5F3',
+    dark: '#29A79C',
   },
   special: {
     default: '#E58306',

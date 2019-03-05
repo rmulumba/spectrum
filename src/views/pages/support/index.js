@@ -110,7 +110,7 @@ class Support extends React.Component<{}> {
                     track(events.SUPPORT_PAGE_JOIN_SPECTRUM_COMMUNITY)
                   }
                 >
-                  Join our community
+                  Join our learning group
                 </Button>
               </Link>
             </PlanSection>

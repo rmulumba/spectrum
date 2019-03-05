@@ -15,7 +15,7 @@ const EmptyThreadFeed = ({ dispatch }) => (
       Your feed's a little quiet right now, but don't worry...
     </NullHeading>
     <NullHeading>We've got recommendations!</NullHeading>
-    <Hint>Kick your community off right!</Hint>
+    <Hint>Kick your learning group off right!</Hint>
     {/* dispatch activethread to 'new'? */}
     <Button icon={'post'} onClick={() => dispatch(openComposer())}>
       Post your first thread
@@ -24,7 +24,7 @@ const EmptyThreadFeed = ({ dispatch }) => (
     <Link to={'/explore'}>
       <OutlineButton>
         <Icon glyph="explore" />
-        <span>Join more communities</span>
+        <span>Join more learning groups</span>
       </OutlineButton>
     </Link>
   </NullThreadFeed>

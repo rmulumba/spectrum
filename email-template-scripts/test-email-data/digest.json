@@ -1,5 +1,5 @@
 {
-  "subject": "Keyy Daily Digest: Something, Another Thing, and 9 more active conversations in your communities",
+  "subject": "Keyy Daily Digest: Something, Another Thing, and 9 more active conversations in your learning groups",
   "preheader": "Your Keyy daily digest · December 9, 2018",
   "unsubscribeToken": "foo",
   "data": {
@@ -40,7 +40,7 @@
         "website": "website"
       }
     ],
-    "reputationString": "You were a little quiet yesterday and haven't gained any reputation – join some of the conversations below, your communities would love to hear from you. Reputation is an indicator of how active and constructive you are across all your communities. The more great conversations you start or join, the more reputation you will have.",
+    "reputationString": "You were a little quiet yesterday and haven't gained any reputation – join some of the conversations below, your communities would love to hear from you. Reputation is an indicator of how active and constructive you are across all your learning groups. The more great conversations you start or join, the more reputation you will have.",
     "timeframe": {
       "subject": "daily",
       "time": "day"

@@ -1,6 +1,6 @@
 {
   "subject": "🐟 User spamming threads alert: Someone has published one thread in previous 10 minutes",
-  "preheader": "Someone is attempting to publish a new thread in the made up community",
+  "preheader": "Someone is attempting to publish a new thread in the made up learning group",
   "data": {
     "user": {
       "createdAt": "2018-04-30T23:27:15.910Z",

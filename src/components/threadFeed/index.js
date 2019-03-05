@@ -27,7 +27,7 @@ const NullState = ({ viewContext, search }) => {
   let cp;
 
   if (viewContext && viewContext === 'community') {
-    hd = 'This community’s just getting started...';
+    hd = 'This learning group’s just getting started...';
     cp = 'Why don’t you kick things off?';
   }
 
@@ -53,14 +53,14 @@ const UpsellState = ({ community }) => (
   <Upsell>
     <UpsellHeader>
       <Icon glyph={'welcome'} size={48} />
-      <h3>Welcome to your new community!</h3>
+      <h3>Welcome to your new learning group!</h3>
     </UpsellHeader>
     <p>
       You’ve already taken a huge step, but there’s one problem - there’s no one
       here yet!
     </p>
     <p>
-      This is usually the hardest part for new communities, but don’t worry!
+      This is usually the hardest part for new learning groups, but don’t worry!
       We’ve got a few suggestions to help you get things started...
     </p>
     <p>
@@ -78,7 +78,7 @@ const UpsellState = ({ community }) => (
     </UpsellBlock>
     <p>
       Once you’ve got a couple threads started, make sure to{' '}
-      <b>help people find your community</b>. Talking about your community on
+      <b>help people find your learning group</b>. Talking about your learning group on
       social media like Twitter or Facebook is a great start - or you could add
       our{' '}
       <a
@@ -99,7 +99,7 @@ const UpsellState = ({ community }) => (
       <p>
         If you’ve encountered an issue, want a new feature, or just need some
         help, you can always find the Keyy team in the{' '}
-        <Link to={'/spectrum'}>Keyy Support</Link> community or on{' '}
+        <Link to={'/spectrum'}>Keyy Support</Link> Learning group or on{' '}
         <a
           target="_blank"
           rel="noopener noreferrer"

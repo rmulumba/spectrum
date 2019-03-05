@@ -68,7 +68,7 @@ class ChannelSelector extends React.Component<Props> {
 
     return (
       <ViewError
-        heading={"We couldn't fetch this community's channels."}
+        heading={"We couldn't fetch this learning group's channels."}
         refresh
         small
       />

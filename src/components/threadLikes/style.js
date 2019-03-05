@@ -38,6 +38,16 @@ export const LikeButtonWrapper = styled(Button)`
     color: ${props =>
       props.hasReacted ? props.theme.brand.alt : props.theme.text.default};
   }
+  
+  .icon {
+    color: ${props =>
+    props.hasReacted ? props.theme.brand.alt : props.theme.text.alt};
+  }
+  
+  icon:hover {
+    color: ${props =>
+    props.hasReacted ? props.theme.brand.reverse : props.theme.text.alt};
+  }
 `;
 
 export const LikeCountWrapper = styled.div`

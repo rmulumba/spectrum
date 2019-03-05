@@ -1,6 +1,6 @@
 {
   "subject": "New Slack import: 2 invites from the blah Slack team",
-  "preheader": "2 invites sent for the blah community",
+  "preheader": "2 invites sent for the blah learning group",
   "data": {
     "community": {
       "administratorEmail": "email",

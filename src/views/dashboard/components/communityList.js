@@ -119,7 +119,7 @@ class CommunityList extends React.Component<Props> {
                   <Reputation
                     ignoreClick
                     size={'mini'}
-                    tipText={`Your rep in ${c.name}`}
+                    tipText={`Your Keyy Coin in ${c.name}`}
                     reputation={c.communityPermissions.reputation}
                   />
                 </CommunityListMeta>
@@ -148,7 +148,7 @@ class CommunityList extends React.Component<Props> {
           >
             <CommunityListItem>
               <Icon glyph={'explore'} />
-              <CommunityListName>Find more communities</CommunityListName>
+              <CommunityListName>Find more learning groups</CommunityListName>
             </CommunityListItem>
           </Link>
           {// if user has joined less than 5 communities, upsell some popular ones

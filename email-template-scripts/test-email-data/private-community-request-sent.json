@@ -1,6 +1,6 @@
 {
-  "subject": "username has requested to join the Test community",
-  "preheader": "View your community settings to approve or block this request",
+  "subject": "username has requested to join the Test learning group",
+  "preheader": "View your learning group settings to approve or block this request",
   "data": {
     "user": {
       "coverPhoto": "",

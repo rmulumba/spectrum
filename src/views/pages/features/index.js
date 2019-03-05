@@ -49,10 +49,10 @@ class Features extends React.Component<Props, State> {
           <Intro>
             <TextContent>
               <Heading>
-                Everything you need to build a great online community
+                Everything you need to build a great online learning group
               </Heading>
               <Copy style={{ marginBottom: '32px' }}>
-                We give you a powerful set of tools to grow your community
+                We give you a powerful set of tools to grow your learning group
                 organically, moderate it effectively, and measure its ROI for
                 your organization.
               </Copy>
@@ -77,7 +77,7 @@ class Features extends React.Component<Props, State> {
             </Topic>
             <FeatureList>
               <Heading reverse>
-                Growing your community has never been so easy.
+                Growing your learning group has never been so easy.
               </Heading>
               <Feature>
                 <Icon glyph="message" size="48" />
@@ -96,21 +96,21 @@ class Features extends React.Component<Props, State> {
                 <FeatureName>Location, location, location</FeatureName>
                 <FeatureCopy>
                   <p>
-                    Conversations and communities on Keyy are public,
+                    Conversations and learning groups on Keyy are public,
                     permalinked, and search engine optimized by default which
                     makes it easy for new members to find and join your
-                    community.
+                    learning group.
                   </p>
                 </FeatureCopy>
               </Feature>
               <Feature>
                 <Icon glyph="profile" size="48" />
-                <FeatureName>Every community, only one account</FeatureName>
+                <FeatureName>Every learning group, only one account</FeatureName>
                 <FeatureCopy>
                   <p>
                     Skip managing multiple credentials and playing whack-a-mole
                     with DMs and notifications, Keyy lets you join as many
-                    communities as you want with only one account.
+                    learning groups as you want with only one account.
                   </p>
                 </FeatureCopy>
               </Feature>
@@ -123,7 +123,7 @@ class Features extends React.Component<Props, State> {
               <Happy />
             </Topic>
             <FeatureList>
-              <Heading reverse>Keep your community happy and healthy.</Heading>
+              <Heading reverse>Keep your learning group happy and healthy.</Heading>
               <Feature>
                 <Icon glyph="controls" size="48" />
                 <FeatureName>
@@ -133,22 +133,22 @@ class Features extends React.Component<Props, State> {
                   <p>
                     We give you fine-grained solutions to moderation issues via
                     individual locking, blocking, and deletion controls for each
-                    thread, message, and member in your community.
+                    thread, message, and member in your learning group.
                   </p>
                   <p>
-                    We also give every community automated toxicity monitoring
+                    We also give every learning group automated toxicity monitoring
                     and spam prevention by default.
                   </p>
                 </FeatureCopy>
               </Feature>
               <Feature>
-                <Icon glyph="rep" size="48" />
+                <Icon glyph="keyy-coin" size="48" />
                 <FeatureName>Real members. Real reputation.</FeatureName>
                 <FeatureCopy>
                   <p>
                     With Keyy's Rep system, you can see how active and
-                    constructive a member is in your community - and globally
-                    across communities - which makes it simple to figure out if
+                    constructive a member is in your learning group - and globally
+                    across learning groups - which makes it simple to figure out if
                     an issue is a trend or an isolated incident.
                   </p>
                 </FeatureCopy>
@@ -181,11 +181,11 @@ class Features extends React.Component<Props, State> {
               <Heading>Focus on impact, not usage.</Heading>
               <Feature>
                 <Icon glyph="like" size="48" />
-                <FeatureName>Understand your community's health</FeatureName>
+                <FeatureName>Understand your learning group's health</FeatureName>
                 <FeatureCopy>
                   <p>
-                    When you add Community Analytics to your community, you'll
-                    get a bird's eye view of your community's overall growth and
+                    When you add Community Analytics to your learning group, you'll
+                    get a bird's eye view of your learning group's overall growth and
                     user engagement.
                   </p>
                   <p>
@@ -202,7 +202,7 @@ class Features extends React.Component<Props, State> {
                 </FeatureName>
                 <FeatureCopy>
                   <p>
-                    With Keyy integrations, your community can go beyond
+                    With Keyy integrations, your learning group can go beyond
                     engagement to provide a convenient first-touch experience to
                     organically onboard and convert new users.
                   </p>
@@ -211,12 +211,12 @@ class Features extends React.Component<Props, State> {
               <Feature>
                 <Icon glyph="analytics" size="48" />
                 <FeatureName comingSoon bright>
-                  Visualize your community's ROI
+                  Visualize your learning group's ROI
                 </FeatureName>
                 <FeatureCopy>
                   <p>
                     With Business Analytics, you can connect your user accounts
-                    to your community and correlate member activity directly to
+                    to your learning group and correlate member activity directly to
                     key customer success metrics.
                   </p>
                   <p>
@@ -263,7 +263,7 @@ class Features extends React.Component<Props, State> {
                   <p>
                     Want feedback on an upcoming release? Spin up a private
                     channel for your beta testers alongside the rest of your
-                    community!
+                    learning group!
                   </p>
                 </FeatureCopy>
               </Feature>

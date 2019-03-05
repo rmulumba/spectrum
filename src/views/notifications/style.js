@@ -197,7 +197,7 @@ export const SpecialContext = styled(ContextRow)`
 `;
 
 export const ReactionContext = styled(ContextRow)`
-  color: ${theme.warn.alt};
+  color: ${theme.brand.default};
 `;
 
 export const JoinContext = styled(ContextRow)`

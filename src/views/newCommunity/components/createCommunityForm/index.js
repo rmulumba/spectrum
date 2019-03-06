@@ -466,9 +466,9 @@ class CreateCommunityForm extends React.Component<Props, State> {
 
     const suggestionString = slugTaken
       ? communitySuggestions && communitySuggestions.length > 0
-        ? 'Were you looking for one of these communities?'
+        ? 'Were you looking for one of these learning groups?'
         : null
-      : "This community name and url are available! We also found communities that might be similar to what you're trying to create, just in case you would rather join an existing community instead!";
+      : "This learning group name and url are available! We also found learning groups that might be similar to what you're trying to create, just in case you would rather join an existing learning group instead!";
 
     return (
       <FormContainer data-cy="create-community-form">

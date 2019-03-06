@@ -11,6 +11,7 @@ import { addToastWithTimeout } from 'src/actions/toasts';
 import Icon from 'src/components/icons';
 import { LikeButtonWrapper, LikeCountWrapper, CurrentCount } from './style';
 import { withCurrentUser } from 'src/components/withCurrentUser';
+import { SvgWrapper } from 'src/components/icons';
 
 type LikeButtonProps = {
   thread: GetThreadType,
@@ -57,7 +58,9 @@ class LikeButtonPure extends React.Component<LikeButtonProps> {
         hasReacted={hasReacted}
         onClick={this.handleClick}
         icon={'aha'}
+        size={25}
       >
+
         {hasReacted ? 'Aha!' : 'Aha!'}
         <CurrentCount>{count}</CurrentCount>
       </LikeButtonWrapper>
@@ -85,7 +88,7 @@ export const LikeCount = (props: LikeCountProps) => {
       <Icon
         glyph={'aha'}
         size={24}
-        tipText={`${count} aha`}
+        tipText={`${count} Aha!s`}
         tipLocation={'top-right'}
       />
       <CurrentCount>{count || '0'}</CurrentCount>

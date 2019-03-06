@@ -242,7 +242,7 @@ class Navbar extends React.Component<Props, State> {
               {currentUser &&
                 typeof currentUser.totalReputation === 'number' && (
                   <Reputation>
-                    <Icon glyph="keyy-coin" />{' '}
+                    <Icon glyph="keyy-coin" size={24}/>{' '}
                     {truncateNumber(
                       parseInt(currentUser.totalReputation, 10),
                       1
@@ -323,7 +323,7 @@ class Navbar extends React.Component<Props, State> {
             to="/support"
             data-cy="navbar-support"
           >
-            <Icon glyph="like" />
+            <Icon glyph="aha" />
             <Label>Support</Label>
           </SupportTab>
           <SigninLink to="/login">Sign In</SigninLink>

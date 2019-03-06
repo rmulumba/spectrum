@@ -74,7 +74,7 @@ class RepExplainerModal extends React.Component<Props> {
                 <UserAvatar user={currentUser} size={24} />
                 <RepWrapper>
                   <Reputation
-                    tipText={'Your total reputation'}
+                    tipText={'Your total Keyy Coin'}
                     reputation={currentUser.totalReputation}
                     ignoreClick
                   />

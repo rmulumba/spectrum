@@ -43,7 +43,7 @@ export class Login extends React.Component<Props> {
     const viewSubtitle =
       signinType === 'login'
         ? "We're happy to see you again - sign in below to get back into the conversation!"
-        : 'Keyy is a place where learning groups can share, discuss, and grow together. Sign in below to get in on the conversation.';
+        : 'Keyy is an alternative educational experience designed to help achieve your goals with less time, frustration, and money - while feeling inspired, challenged and loved.';
 
     return (
       <FullscreenView
@@ -57,7 +57,7 @@ export class Login extends React.Component<Props> {
           style={{ justifyContent: 'center' }}
         >
           <UpsellIconContainer>
-            <Icon glyph={'emoji'} size={64} />
+            <Icon glyph={'login-page-logo'} size={120} tipText={'logo'}/>
           </UpsellIconContainer>
           <LargeTitle>{viewTitle}</LargeTitle>
           <LargeSubtitle>{viewSubtitle}</LargeSubtitle>

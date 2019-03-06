@@ -64,7 +64,7 @@ const Share = ({ community, history, onboarding }) => {
       {onboarding && (
         <ButtonRow>
           <Description centered>
-            You're ready to start building your community - you can view it now,
+            You're ready to start building your learning group - you can view it now,
             or manage your settings at any time
           </Description>
           <a href={`/${community.slug}/settings`}>

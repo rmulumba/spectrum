@@ -180,7 +180,7 @@ class Features extends React.Component<Props, State> {
             <FeatureList>
               <Heading>Focus on impact, not usage.</Heading>
               <Feature>
-                <Icon glyph="like" size="48" />
+                <Icon glyph="aha" size="48" />
                 <FeatureName>Understand your learning group's health</FeatureName>
                 <FeatureCopy>
                   <p>

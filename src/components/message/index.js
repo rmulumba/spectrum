@@ -273,7 +273,7 @@ class Message extends React.Component<Props, State> {
                                 }
                           }
                           tipText={
-                            me ? 'Likes' : hasReacted ? 'Unlike' : 'Like'
+                            me ? 'Aha!s' : hasReacted ? 'Unaha!' : 'Aha!'
                           }
                           tipLocation={'top-right'}
                         >
@@ -283,7 +283,7 @@ class Message extends React.Component<Props, State> {
                                 ? 'inline-unlike-action'
                                 : 'inline-like-action'
                             }
-                            glyph="like-fill"
+                            glyph="aha-fill"
                             size={16}
                             color={'text.reverse'}
                           />
@@ -344,7 +344,7 @@ class Message extends React.Component<Props, State> {
                             render={({ me, count, hasReacted, mutation }) => (
                               <LikeAction
                                 hasReacted={hasReacted}
-                                tipText={hasReacted ? 'Unlike' : 'Like'}
+                                tipText={hasReacted ? 'Unaha!' : 'Aha!'}
                                 tipLocation={'top'}
                                 onClick={e => {
                                   e.stopPropagation();
@@ -355,7 +355,7 @@ class Message extends React.Component<Props, State> {
                                   dataCy={
                                     hasReacted ? 'unlike-action' : 'like-action'
                                   }
-                                  glyph={hasReacted ? 'like-fill' : 'like'}
+                                  glyph={hasReacted ? 'aha-fill' : 'aha'}
                                   size={20}
                                 />
                               </LikeAction>

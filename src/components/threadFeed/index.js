@@ -98,8 +98,8 @@ const UpsellState = ({ community }) => (
     <UpsellFooter>
       <p>
         If you’ve encountered an issue, want a new feature, or just need some
-        help, you can always find the Grindery team in the{' '}
-        <Link to={'/spectrum'}>Grindery Support</Link> community or on{' '}
+        help, you can always find the Keyy team in the{' '}
+        <Link to={'/spectrum'}>Keyy Support</Link> community or on{' '}
         <a
           target="_blank"
           rel="noopener noreferrer"
@@ -365,7 +365,7 @@ class ThreadFeedPure extends React.Component<Props, State> {
         <ViewError
           heading={'We ran into an issue loading the feed'}
           subheading={
-            'Try refreshing the page below. If you’re still seeing this error, you can email us at hi@chat.grindery.io.'
+            'Try refreshing the page below. If you’re still seeing this error, you can email us at hi@learn.keyy.org.'
           }
           refresh
         />

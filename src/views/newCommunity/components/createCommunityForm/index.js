@@ -523,7 +523,7 @@ class CreateCommunityForm extends React.Component<Props, State> {
             onBlur={this.checkSuggestedCommunities}
             dataCy="community-slug-input"
           >
-            chat.grindery.io/
+            learn.keyy.org/
           </UnderlineInput>
 
           {slugTaken && (
@@ -653,7 +653,7 @@ class CreateCommunityForm extends React.Component<Props, State> {
                   })
                 }
               >
-                Grindery Code of Conduct
+                Keyy Code of Conduct
               </a>{' '}
               and agree to enforce it in my community.
             </span>

@@ -184,7 +184,7 @@ class Features extends React.Component<Props, State> {
                 <FeatureName>Understand your learning group's health</FeatureName>
                 <FeatureCopy>
                   <p>
-                    When you add Community Analytics to your learning group, you'll
+                    When you add Learning group Analytics to your learning group, you'll
                     get a bird's eye view of your learning group's overall growth and
                     user engagement.
                   </p>
@@ -304,7 +304,7 @@ class Features extends React.Component<Props, State> {
             </EtcFeature>
             <EtcFeature color="special.default">
               <Icon glyph="community" />
-              <EtcName>Public community</EtcName>
+              <EtcName>Public learning group</EtcName>
             </EtcFeature>
             <EtcFeature color="warn.alt">
               <Icon glyph="private-outline" />

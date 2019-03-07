@@ -74,7 +74,7 @@ class NewUserOnboarding extends Component<Props, State> {
       joinedCommunities: 0,
       appUpsellCopy: {
         title: 'Download the app',
-        subtitle: 'A better way to keep up with your communities.',
+        subtitle: 'A better way to keep up with your learning groups.',
       },
     };
   }

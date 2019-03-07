@@ -84,7 +84,7 @@ class Support extends React.Component<{}> {
                 <PlanPrice>What we’ve been working on</PlanPrice>
                 <PlanDescription>
                   We post news, release notes, and threads from all over Keyy on
-                  Twitter, or directly in our community.
+                  Twitter, or directly in our learning group.
                 </PlanDescription>
               </div>
 
@@ -105,7 +105,7 @@ class Support extends React.Component<{}> {
               <Link to={'/spectrum'}>
                 <Button
                   gradientTheme={'brand'}
-                  icon={'logo'}
+                  icon={'button-logo'}
                   onClick={() =>
                     track(events.SUPPORT_PAGE_JOIN_SPECTRUM_COMMUNITY)
                   }

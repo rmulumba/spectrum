@@ -46,7 +46,7 @@ export const getHeader = ({
         <meta property="og:site_name" content="Keyy" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@withgrindery" />
-        <meta name="twitter:image:alt" content="Where communities are built" />
+        <meta name="twitter:image:alt" content="Where learning groups are built" />
         <style>
             body {
             max-width: 100%;

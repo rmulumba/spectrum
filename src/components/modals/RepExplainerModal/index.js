@@ -56,7 +56,7 @@ class RepExplainerModal extends React.Component<Props> {
             </IconContainer>
             <Title>Keyy Coin</Title>
             <Subtitle>
-              Keyy Coin provides context about a person's reputation in a community.
+              Keyy Coin provides context about a person's reputation in a learning group.
               Keyy Coin is earned by starting and joining productive conversations.
             </Subtitle>
 
@@ -64,7 +64,7 @@ class RepExplainerModal extends React.Component<Props> {
               currentUser ? (
                 <Rep>
                   You don't have any Keyy Coin yet. Earn Keyy Coin by starting a
-                  conversation or replying to other people in your communities.
+                  conversation or replying to other people in your learning group.
                 </Rep>
               ) : (
                 ''

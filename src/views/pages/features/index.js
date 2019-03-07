@@ -143,10 +143,10 @@ class Features extends React.Component<Props, State> {
               </Feature>
               <Feature>
                 <Icon glyph="keyy-coin" size="48" />
-                <FeatureName>Real members. Real reputation.</FeatureName>
+                <FeatureName>Real members. Real Keyy Coin.</FeatureName>
                 <FeatureCopy>
                   <p>
-                    With Keyy's Rep system, you can see how active and
+                    With Keyy's Keyy Coin system, you can see how active and
                     constructive a member is in your learning group - and globally
                     across learning groups - which makes it simple to figure out if
                     an issue is a trend or an isolated incident.
@@ -161,7 +161,7 @@ class Features extends React.Component<Props, State> {
                 <FeatureCopy>
                   <p>
                     Identifying a problem is one thing, but it can still be hard
-                    to know how to act on a moderation issue. SAM (Keyy
+                    to know how to act on a moderation issue. KAM (Keyy
                     Assistant Moderator) helps you make those decisions by
                     recommending proven solutions, automatically flagging toxic
                     messages for removal, and even addressing issues with

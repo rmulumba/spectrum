@@ -88,7 +88,7 @@ export const LikeCount = (props: LikeCountProps) => {
       <Icon
         glyph={'aha'}
         size={24}
-        tipText={`${count} Aha!s`}
+        tipText={`${count} Aha!‘s`}
         tipLocation={'top-right'}
       />
       <CurrentCount>{count || '0'}</CurrentCount>

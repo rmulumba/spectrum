@@ -273,7 +273,7 @@ class Message extends React.Component<Props, State> {
                                 }
                           }
                           tipText={
-                            me ? 'Aha!s' : hasReacted ? 'Unaha!' : 'Aha!'
+                            me ? 'Aha!s' : hasReacted ? 'Undo' : 'Aha!'
                           }
                           tipLocation={'top-right'}
                         >
@@ -344,7 +344,7 @@ class Message extends React.Component<Props, State> {
                             render={({ me, count, hasReacted, mutation }) => (
                               <LikeAction
                                 hasReacted={hasReacted}
-                                tipText={hasReacted ? 'Unaha!' : 'Aha!'}
+                                tipText={hasReacted ? 'Undo' : 'Aha!'}
                                 tipLocation={'top'}
                                 onClick={e => {
                                   e.stopPropagation();

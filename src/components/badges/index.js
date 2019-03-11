@@ -63,7 +63,7 @@ class Badge extends React.Component<Props> {
             tipLocation="top-left"
             {...rest}
           >
-            Mentor
+            Coach
           </TeamBadge>
         );
       default:

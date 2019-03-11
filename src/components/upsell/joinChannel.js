@@ -118,7 +118,7 @@ class JoinChannel extends React.Component<Props, State> {
       <JoinChannelContainer>
         <JoinChannelContent>
           <JoinChannelTitle>
-            Join the {channel.name} channel in the {community.name} community
+            Join the {channel.name} channel in the {community.name} learning group
           </JoinChannelTitle>
           <JoinChannelSubtitle>
             Once you join this channel you’ll be able to post your replies here!

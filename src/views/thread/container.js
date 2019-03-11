@@ -377,7 +377,7 @@ class ThreadContainer extends React.Component<Props, State> {
             </Link>
             <WatercoolerDescription>
               Welcome to the {thread.community.name} watercooler, a space for
-              general chat with everyone in the community. Jump in to the
+              general chat with everyone in the learning group. Jump in to the
               conversation below or introduce yourself!
             </WatercoolerDescription>
           </WatercoolerIntroContainer>

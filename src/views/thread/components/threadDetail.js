@@ -153,7 +153,7 @@ class ThreadDetailPure extends React.Component<Props, State> {
     if (isCommunityOwner && !thread.isAuthor) {
       message = `You are about to delete another person's thread. As the owner of the ${
         thread.community.name
-      } community, you have permission to do this. The thread author will be notified that this thread was deleted.`;
+      } learning group, you have permission to do this. The thread author will be notified that this thread was deleted.`;
     } else if (isChannelOwner && !thread.isAuthor) {
       message = `You are about to delete another person's thread. As the owner of the ${
         thread.channel.name

@@ -3,6 +3,7 @@ export const theme = {
   bg: {
     default: '#FFFFFF',
     reverse: '#16171A',
+      reverseKeyy: '#393E46',
     wash: '#F5F8FC',
     border: '#DFE7EF',
     hairline: '#A3AFBF',

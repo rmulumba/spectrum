@@ -211,7 +211,7 @@ export const Upsell404Community = () => {
       </Link>
 
       <Link to={'/new/community'}>
-        <Button large>Create a community</Button>
+        <Button large>Create a learning group</Button>
       </Link>
     </Actions>
   );

@@ -360,7 +360,7 @@ class CreateChannelModal extends React.Component<Props, State> {
 
             {createError && (
               <Error>
-                Please fix any errors above before creating this community.
+                Please fix any errors above before creating this learning group.
               </Error>
             )}
           </Form>

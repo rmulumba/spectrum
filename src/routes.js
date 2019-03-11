@@ -329,7 +329,7 @@ class Routes extends React.Component<Props> {
                 {isCommunityDomain ? null : (
                   <Route
                     path="/about"
-                    render={externalRedirect('https://www.Keyy.org/')}
+                    render={externalRedirect('https://www.Keyy.org/about')}
                   />
                 )}
                 {isCommunityDomain ? null : (
@@ -368,7 +368,12 @@ class Routes extends React.Component<Props> {
                   />
                 )}
                 {isCommunityDomain ? null : (
-                  <Route path="/support" component={Pages} />
+                  <Route
+                      path="/support"
+                      render={externalRedirect(
+                             'https://learn.keyy.org/keyy-support/'
+                         )}
+                  />
                 )}
                 {isCommunityDomain ? null : (
                   <Route path="/features" component={Pages} />

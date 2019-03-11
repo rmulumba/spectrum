@@ -50,7 +50,7 @@ class UpsellNewUser extends Component {
       let error;
       if (joinedCommunities === 0 && !communities) {
         error =
-          'To get started, try joining some communities above, or creating your own!';
+          'To get started, try joining some learning groups above, or creating your own!';
       } else if (!savedUsername) {
         error = 'Be sure to save your username!';
       }

@@ -169,7 +169,7 @@ class Sidebar extends React.Component<Props> {
                           loading={isLoading}
                           dataCy="thread-sidebar-join-community-button"
                         >
-                          Join community
+                          Join learning group
                         </Button>
                       )}
                     />
@@ -180,7 +180,7 @@ class Sidebar extends React.Component<Props> {
                         color={'success.default'}
                         dataCy="thread-sidebar-join-login-button"
                       >
-                        Join community
+                        Join learning group
                       </Button>
                     </Link>
                   )}

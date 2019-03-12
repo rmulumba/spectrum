@@ -173,7 +173,7 @@ class NewUserOnboarding extends Component<Props, State> {
       },
       joinFirstCommunity: {
         // will be triggered if the user signed up via a community, channel, or thread view
-        title: 'Join your first community',
+        title: 'Join your first learning group',
         subtitle:
           "You were in the middle of something. Let's get back on track and join your first learning group!",
         emoji: '🎉',

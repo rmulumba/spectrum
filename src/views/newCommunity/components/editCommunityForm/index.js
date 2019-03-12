@@ -209,7 +209,7 @@ class CommunityWithData extends React.Component<Props, State> {
         // community was returned
         if (community !== undefined) {
           this.props.dispatch(
-            addToastWithTimeout('success', 'Learning group saved!')
+            addToastWithTimeout('success', 'learning group saved!')
           );
           this.props.communityUpdated(community);
         }

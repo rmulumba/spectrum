@@ -14,7 +14,7 @@ const EmptyThreadFeed = ({ dispatch }) => (
       Your feed's a little quiet right now, but don't worry...
     </NullHeading>
     <NullHeading>We've got recommendations!</NullHeading>
-    <Hint>Kick your community off right!</Hint>
+    <Hint>Kick your learning group off right!</Hint>
     <Button icon={'post'} onClick={() => dispatch(changeActiveThread('new'))}>
       Post your first thread
     </Button>
@@ -22,7 +22,7 @@ const EmptyThreadFeed = ({ dispatch }) => (
     <Link to={'/explore'}>
       <OutlineButton>
         <Icon glyph="explore" />
-        <span>Join more learning group</span>
+        <span>Join more learning groups</span>
       </OutlineButton>
     </Link>
   </NullThreadFeed>

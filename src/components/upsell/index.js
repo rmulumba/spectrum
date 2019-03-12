@@ -94,7 +94,7 @@ export const UpsellMiniCreateCommunity = () => {
 // button will close the new user onboarding
 export const UpsellCreateCommunity = ({ close }: { close: Function }) => {
   const title = 'Create a learning group';
-  const subtitle = 'Building learning group on Keyy is easy and free forever';
+  const subtitle = 'Building learning groups on Keyy is easy and free forever';
 
   return (
     <NullCard bg={'onboarding'}>

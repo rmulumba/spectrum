@@ -60,7 +60,7 @@ const UpsellState = ({ community }) => (
       here yet!
     </p>
     <p>
-      This is usually the hardest part for new communities, but don’t worry!
+      This is usually the hardest part for new learning groups, but don’t worry!
       We’ve got a few suggestions to help you get things started...
     </p>
     <p>
@@ -78,9 +78,9 @@ const UpsellState = ({ community }) => (
     </UpsellBlock>
     <p>
       Once you’ve got a couple threads started, make sure to{' '}
-      <b>help people find your community</b>. Talking about your community on
-      social media like Twitter or Facebook is a great start - or you could add
-      our{' '}
+      <b>help people find your learning group</b>. Talking about your learning
+      group on social media like Twitter or Facebook is a great start - or you
+      could add our{' '}
       <a
         target="_blank"
         rel="noopener noreferrer"
@@ -99,11 +99,11 @@ const UpsellState = ({ community }) => (
       <p>
         If you’ve encountered an issue, want a new feature, or just need some
         help, you can always find the Keyy team in the{' '}
-        <Link to={'/spectrum'}>Keyy Support</Link> community or on{' '}
+        <Link to={'/spectrum'}>Keyy Support</Link> learning group or on{' '}
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://twitter.com/withgrindery"
+          href="https://twitter.com/withkeyy"
         >
           Twitter
         </a>{' '}

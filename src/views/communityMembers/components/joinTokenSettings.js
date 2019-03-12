@@ -52,8 +52,9 @@ class JoinTokenSettings extends React.Component<Props, State> {
         <SectionCard data-cy="login-with-token-settings">
           <SectionTitle>Join learning group via link</SectionTitle>
           <SectionSubtitle>
-            Allow people to join this private community by visiting a unique
-            link. Anyone with this link will be able to join this community.
+            Allow people to join this private learning group by visiting a
+            unique link. Anyone with this link will be able to join this
+            community.
           </SectionSubtitle>
 
           <LoginTokenToggle settings={joinSettings} id={community.id} />

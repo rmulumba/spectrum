@@ -21,7 +21,10 @@ type Props = {
 
 class MemberGrowth extends React.Component<Props> {
   render() {
-    const { data: { community }, isLoading } = this.props;
+    const {
+      data: { community },
+      isLoading,
+    } = this.props;
 
     if (community) {
       const {
@@ -32,7 +35,7 @@ class MemberGrowth extends React.Component<Props> {
       } = community.memberGrowth;
       return (
         <SectionCard>
-          <SectionSubtitle>Your community</SectionSubtitle>
+          <SectionSubtitle>Your learning group</SectionSubtitle>
           <SectionTitle>{count.toLocaleString()} members</SectionTitle>
           {parseGrowth(weeklyGrowth, 'this week')}
           {parseGrowth(monthlyGrowth, 'this month')}
@@ -53,6 +56,7 @@ class MemberGrowth extends React.Component<Props> {
   }
 }
 
-export default compose(getCommunityMemberGrowth, viewNetworkHandler)(
-  MemberGrowth
-);
+export default compose(
+  getCommunityMemberGrowth,
+  viewNetworkHandler
+)(MemberGrowth);

@@ -205,7 +205,7 @@ class MessagesWithData extends React.Component<Props, State> {
           <A
             href={`https://twitter.com/share?text=${encodeURIComponent(
               threadTitle
-            )} on @withgrindery&url=https://learn.keyy.org/${getThreadLink(
+            )} on @withkeyy&url=https://learn.keyy.org/${getThreadLink(
               this.props.data.thread
             )}`}
             target="_blank"

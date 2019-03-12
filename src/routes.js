@@ -282,7 +282,7 @@ class Routes extends React.Component<Props> {
             <Body>
               <Head
                 title="Ongoing Maintenance - Keyy"
-                description="Keyy is currently undergoing scheduled maintenance downtime. Please check https://twitter.com/withgrindery for ongoing updates."
+                description="Keyy is currently undergoing scheduled maintenance downtime. Please check https://twitter.com/withkeyy for ongoing updates."
               />
               <Maintenance />
             </Body>

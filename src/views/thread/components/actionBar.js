@@ -314,7 +314,7 @@ class ActionBar extends React.Component<Props, State> {
                       thread
                     )}&text=${encodeURIComponent(
                       thread.content.title
-                    )} on @withgrindery`}
+                    )} on @withkeyy`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >

@@ -21,7 +21,10 @@ type Props = {
 
 class ConversationGrowth extends React.Component<Props> {
   render() {
-    const { data: { community }, isLoading } = this.props;
+    const {
+      data: { community },
+      isLoading,
+    } = this.props;
 
     if (community) {
       const {
@@ -32,7 +35,7 @@ class ConversationGrowth extends React.Component<Props> {
       } = community.conversationGrowth;
       return (
         <SectionCard>
-          <SectionSubtitle>Your community‘s conversations</SectionSubtitle>
+          <SectionSubtitle>Your learning group‘s conversations</SectionSubtitle>
           <SectionTitle>
             {count.toLocaleString()} total conversations
           </SectionTitle>
@@ -55,6 +58,7 @@ class ConversationGrowth extends React.Component<Props> {
   }
 }
 
-export default compose(getCommunityConversationGrowth, viewNetworkHandler)(
-  ConversationGrowth
-);
+export default compose(
+  getCommunityConversationGrowth,
+  viewNetworkHandler
+)(ConversationGrowth);

@@ -49,7 +49,7 @@ export const NewThreadReactionNotification = ({
       />
       <CardContent>
         <ThreadReactionContext>
-          <Icon glyph="thumbsup-fill" />
+          <Icon glyph="aha-fill" />
           <ActorsRow actors={actors.asObjects} />
         </ThreadReactionContext>
         <Content>
@@ -90,7 +90,7 @@ export const MiniNewThreadReactionNotification = ({
       />
       <CardContent>
         <ThreadReactionContext>
-          <Icon glyph="thumbsup-fill" />
+          <Icon glyph="aha-fill" />
           <ActorsRow actors={actors.asObjects} />
         </ThreadReactionContext>
         <Content>

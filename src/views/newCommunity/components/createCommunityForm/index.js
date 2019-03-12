@@ -466,9 +466,9 @@ class CreateCommunityForm extends React.Component<Props, State> {
 
     const suggestionString = slugTaken
       ? communitySuggestions && communitySuggestions.length > 0
-        ? 'Were you looking for one of these communities?'
+        ? 'Were you looking for one of these learning groups?'
         : null
-      : "This community name and url are available! We also found communities that might be similar to what you're trying to create, just in case you would rather join an existing community instead!";
+      : "This learning group name and url are available! We also found learning groups that might be similar to what you're trying to create, just in case you would rather join an existing learning group instead!";
 
     return (
       <FormContainer data-cy="create-community-form">
@@ -510,11 +510,11 @@ class CreateCommunityForm extends React.Component<Props, State> {
             onBlur={this.checkSuggestedCommunities}
             dataCy="community-name-input"
           >
-            What is your community called?
+            What is your learning group called?
           </Input>
 
           {nameError && (
-            <Error>Community names can be up to 20 characters long.</Error>
+            <Error>Learning group names can be up to 20 characters long.</Error>
           )}
 
           <UnderlineInput
@@ -592,7 +592,7 @@ class CreateCommunityForm extends React.Component<Props, State> {
             onChange={this.changeWebsite}
             dataCy="community-website-input"
           >
-            Optional: Add your community’s website
+            Optional: Add your learning group’s website
           </Input>
 
           <PrivacySelector>
@@ -608,9 +608,9 @@ class CreateCommunityForm extends React.Component<Props, State> {
                 Public
               </PrivacyOptionLabel>
               <PrivacyOptionText>
-                Anyone can join and view conversations. Public communities will
-                appear in search results, and can appear as suggested
-                communities to non-members. Conversations will be search
+                Anyone can join and view conversations. Public learning groups
+                will appear in search results, and can appear as suggested
+                learning groups to non-members. Conversations will be search
                 indexed.
               </PrivacyOptionText>
             </PrivacyOption>
@@ -628,8 +628,8 @@ class CreateCommunityForm extends React.Component<Props, State> {
               </PrivacyOptionLabel>
               <PrivacyOptionText>
                 All members must be approved before they can view or join
-                conversations. Private communities will not appear in search
-                results or suggested communities. Conversations will not be
+                conversations. Private learning groups will not appear in search
+                results or suggested learning groups. Conversations will not be
                 search indexed.
               </PrivacyOptionText>
             </PrivacyOption>
@@ -644,7 +644,7 @@ class CreateCommunityForm extends React.Component<Props, State> {
             <span>
               I have read the{' '}
               <a
-                href="https://www.grindery.io/code-of-conduct"
+                href="https://learn.keyy.org/keyy-support/getting-started/keyys-code-of-conduct~87204628-d977-4945-af9d-2f60d3e38c9f"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() =>
@@ -655,13 +655,13 @@ class CreateCommunityForm extends React.Component<Props, State> {
               >
                 Keyy Code of Conduct
               </a>{' '}
-              and agree to enforce it in my community.
+              and agree to enforce it in my learning group.
             </span>
           </Checkbox>
 
           {createError && (
             <Error>
-              Please fix any errors above before creating this community.
+              Please fix any errors above before creating this learning group.
             </Error>
           )}
         </Form>
@@ -683,7 +683,7 @@ class CreateCommunityForm extends React.Component<Props, State> {
             loading={isLoading}
             dataCy="community-create-button"
           >
-            Create Community & Continue
+            Create Learning Group & Continue
           </Button>
         </Actions>
       </FormContainer>

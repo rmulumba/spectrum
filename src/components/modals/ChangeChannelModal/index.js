@@ -42,7 +42,10 @@ class ChangeChannelModal extends React.Component<Props, State> {
 
   saveNewChannel = () => {
     const { activeChannel } = this.state;
-    const { thread: { id }, dispatch } = this.props;
+    const {
+      thread: { id },
+      dispatch,
+    } = this.props;
 
     this.setState({
       isLoading: true,
@@ -109,7 +112,7 @@ class ChangeChannelModal extends React.Component<Props, State> {
             <Section data-cy="move-thread-modal">
               <Title>Change channel</Title>
               <Subtitle>
-                Move this thread to a new channel in the same community.
+                Move this thread to a new channel in the same learning group.
               </Subtitle>
 
               <ChannelSelector
@@ -142,4 +145,7 @@ class ChangeChannelModal extends React.Component<Props, State> {
 
 const map = state => ({ isOpen: state.modals.isOpen });
 // $FlowIssue
-export default compose(connect(map), moveThreadMutation)(ChangeChannelModal);
+export default compose(
+  connect(map),
+  moveThreadMutation
+)(ChangeChannelModal);

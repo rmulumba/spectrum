@@ -60,7 +60,7 @@ class ChatInputLoginModal extends React.Component<Props> {
             <CodeOfConduct>
               By using Keyy, you agree to our{' '}
               <a
-                href="https://www.grindery.io/code-of-conduct"
+                href="https://learn.keyy.org/keyy-support/getting-started/keyys-code-of-conduct~87204628-d977-4945-af9d-2f60d3e38c9f"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() =>

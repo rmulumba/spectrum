@@ -329,7 +329,7 @@ class Routes extends React.Component<Props> {
                 {isCommunityDomain ? null : (
                   <Route
                     path="/about"
-                    render={externalRedirect('https://www.grindery.io/')}
+                    render={externalRedirect('https://www.keyy.org/about')}
                   />
                 )}
                 {isCommunityDomain ? null : (
@@ -338,37 +338,50 @@ class Routes extends React.Component<Props> {
                 {isCommunityDomain ? null : (
                   <Route
                     path="/terms"
-                    render={externalRedirect('https://www.grindery.io/terms')}
+                    render={externalRedirect(
+                      'https://www.keyy.org/termsofservice'
+                    )}
                   />
                 )}
                 {isCommunityDomain ? null : (
                   <Route
                     path="/privacy"
-                    render={externalRedirect('https://www.grindery.io/privacy')}
+                    render={externalRedirect(
+                      'https://www.keyy.org/privacypolicy'
+                    )}
                   />
                 )}
                 {isCommunityDomain ? null : (
                   <Route
                     path="/terms.html"
-                    render={externalRedirect('https://www.grindery.io/terms')}
+                    render={externalRedirect(
+                      'https://www.keyy.org/termsofservice'
+                    )}
                   />
                 )}
                 {isCommunityDomain ? null : (
                   <Route
                     path="/privacy.html"
-                    render={externalRedirect('https://www.grindery.io/privacy')}
+                    render={externalRedirect(
+                      'https://www.keyy.org/privacypolicy'
+                    )}
                   />
                 )}
                 {isCommunityDomain ? null : (
                   <Route
                     path="/code-of-conduct"
                     render={externalRedirect(
-                      'https://www.grindery.io/code-of-conduct'
+                      'https://learn.keyy.org/keyy-support/getting-started/keyys-code-of-conduct~87204628-d977-4945-af9d-2f60d3e38c9f'
                     )}
                   />
                 )}
                 {isCommunityDomain ? null : (
-                  <Route path="/support" component={Pages} />
+                  <Route
+                    path="/support"
+                    render={externalRedirect(
+                      'https://learn.keyy.org/keyy-support/'
+                    )}
+                  />
                 )}
                 {isCommunityDomain ? null : (
                   <Route path="/features" component={Pages} />

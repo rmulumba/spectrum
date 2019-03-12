@@ -103,7 +103,7 @@ class Sidebar extends React.Component<Props> {
                   </SidebarSectionTitle>
                   <SidebarSectionBody>
                     Sign in to join this conversation, and others like it, in
-                    the communities you care about.
+                    the learning groups you care about.
                   </SidebarSectionBody>
                   <SidebarSectionAuth>
                     <Link to={loginUrl}>
@@ -169,7 +169,7 @@ class Sidebar extends React.Component<Props> {
                           loading={isLoading}
                           dataCy="thread-sidebar-join-community-button"
                         >
-                          Join community
+                          Join learning group
                         </Button>
                       )}
                     />
@@ -180,7 +180,7 @@ class Sidebar extends React.Component<Props> {
                         color={'success.default'}
                         dataCy="thread-sidebar-join-login-button"
                       >
-                        Join community
+                        Join learning group
                       </Button>
                     </Link>
                   )}

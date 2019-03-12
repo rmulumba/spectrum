@@ -46,7 +46,7 @@ class ImportSlackTeam extends React.Component<Props> {
           Connect a Slack team
         </SectionTitleWithIcon>
         <SectionSubtitle>
-          Invite your Slack team to your community or get notified when new
+          Invite your Slack team to your learning group or get notified when new
           conversations are created.
         </SectionSubtitle>
 

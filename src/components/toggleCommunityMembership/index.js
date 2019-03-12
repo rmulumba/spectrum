@@ -38,7 +38,7 @@ class ToggleCommunityMembership extends React.Component<Props, State> {
           id: community.id,
           entity: 'team-member-leaving-community',
           message:
-            'You are a team member of this community. If you leave you will no longer be able to moderate this community.',
+            'You are a team member of thislearning group. If you leave you will no longer be able to moderate this community.',
           buttonLabel: 'Leave Community',
         })
       );
@@ -103,7 +103,7 @@ class ToggleCommunityMembership extends React.Component<Props, State> {
         this.props.dispatch(
           addToastWithTimeout(
             'success',
-            `Joined the ${community.name} community!`
+            `Joined the ${community.name} learning group!`
           )
         );
 

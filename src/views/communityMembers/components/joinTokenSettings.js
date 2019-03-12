@@ -40,14 +40,17 @@ class JoinTokenSettings extends React.Component<Props, State> {
   };
 
   render() {
-    const { data: { community }, isLoading } = this.props;
+    const {
+      data: { community },
+      isLoading,
+    } = this.props;
 
     if (community) {
       const { joinSettings } = community;
 
       return (
         <SectionCard data-cy="login-with-token-settings">
-          <SectionTitle>Join community via link</SectionTitle>
+          <SectionTitle>Join learning group via link</SectionTitle>
           <SectionSubtitle>
             Allow people to join this private community by visiting a unique
             link. Anyone with this link will be able to join this community.
@@ -98,6 +101,8 @@ class JoinTokenSettings extends React.Component<Props, State> {
   }
 }
 
-export default compose(getCommunitySettings, viewNetworkHandler, connect())(
-  JoinTokenSettings
-);
+export default compose(
+  getCommunitySettings,
+  viewNetworkHandler,
+  connect()
+)(JoinTokenSettings);

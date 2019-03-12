@@ -117,7 +117,7 @@ export default class Embed extends Component {
     } = otherProps;
     const entity = block.getEntityAt(0);
     const data = contentState.getEntity(entity).getData();
-    const { aspectRatio, src, width = '100%', height = 200, ...rest } = data;
+    const { aspectRatio, src, width = '100%', height = 600, ...rest } = data;
 
     if (!src) return null;
 

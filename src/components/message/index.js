@@ -168,8 +168,8 @@ class Message extends React.Component<Props, State> {
       threadType === 'story' && thread
         ? `/${getThreadLink(thread)}?m=${selectedMessageId}`
         : threadType === 'directMessageThread'
-          ? `/messages/${threadId}?m=${selectedMessageId}`
-          : `/thread/${threadId}?m=${selectedMessageId}`;
+        ? `/messages/${threadId}?m=${selectedMessageId}`
+        : `/thread/${threadId}?m=${selectedMessageId}`;
 
     return (
       <MessagesContext.Consumer>
@@ -237,18 +237,17 @@ class Message extends React.Component<Props, State> {
                     />
                   )}
 
-                  {message.modifiedAt &&
-                    !isEditing && (
-                      <EditedIndicator
-                        data-cy="edited-message-indicator"
-                        tipLocation={'top-right'}
-                        tipText={`Edited ${convertTimestampToDate(
-                          new Date(message.modifiedAt)
-                        )}`}
-                      >
-                        Edited
-                      </EditedIndicator>
-                    )}
+                  {message.modifiedAt && !isEditing && (
+                    <EditedIndicator
+                      data-cy="edited-message-indicator"
+                      tipLocation={'top-right'}
+                      tipText={`Edited ${convertTimestampToDate(
+                        new Date(message.modifiedAt)
+                      )}`}
+                    >
+                      Edited
+                    </EditedIndicator>
+                  )}
 
                   {message.reactions.count > 0 && (
                     <Reaction
@@ -272,9 +271,7 @@ class Message extends React.Component<Props, State> {
                                   mutation();
                                 }
                           }
-                          tipText={
-                            me ? 'Likes' : hasReacted ? 'Unlike' : 'Like'
-                          }
+                          tipText={me ? 'Aha!s' : hasReacted ? 'Undo' : 'Aha!'}
                           tipLocation={'top-right'}
                         >
                           <Icon
@@ -283,7 +280,7 @@ class Message extends React.Component<Props, State> {
                                 ? 'inline-unlike-action'
                                 : 'inline-like-action'
                             }
-                            glyph="like-fill"
+                            glyph="aha-fill"
                             size={16}
                             color={'text.reverse'}
                           />
@@ -344,7 +341,7 @@ class Message extends React.Component<Props, State> {
                             render={({ me, count, hasReacted, mutation }) => (
                               <LikeAction
                                 hasReacted={hasReacted}
-                                tipText={hasReacted ? 'Unlike' : 'Like'}
+                                tipText={hasReacted ? 'Undo' : 'Aha!'}
                                 tipLocation={'top'}
                                 onClick={e => {
                                   e.stopPropagation();
@@ -355,7 +352,7 @@ class Message extends React.Component<Props, State> {
                                   dataCy={
                                     hasReacted ? 'unlike-action' : 'like-action'
                                   }
-                                  glyph={hasReacted ? 'like-fill' : 'like'}
+                                  glyph={hasReacted ? 'aha-fill' : 'aha'}
                                   size={20}
                                 />
                               </LikeAction>

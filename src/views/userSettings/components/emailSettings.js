@@ -54,7 +54,7 @@ const parseNotificationTypes = notifications => {
           type,
           emailValue: notifications.types[type].email,
           label:
-            'Email me every day with the top conversations in my communities.',
+            'Email me every day with the top conversations in my learning groups.',
           display: 'center',
         };
       case 'weeklyDigest':
@@ -62,7 +62,7 @@ const parseNotificationTypes = notifications => {
           type,
           emailValue: notifications.types[type].email,
           label:
-            'Email me once every week with the top conversations in my communities',
+            'Email me once every week with the top conversations in my learning groups',
           display: 'center',
         };
       case 'newMention':

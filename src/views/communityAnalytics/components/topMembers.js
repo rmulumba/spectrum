@@ -54,7 +54,7 @@ class ConversationGrowth extends React.Component<Props> {
             <ViewError
               small
               emoji={'😭'}
-              heading={'Your community has been quiet this week'}
+              heading={'Your learning group has been quiet this week'}
               subheading={
                 'When people are posting new threads and joining conversations, the most active people will appear here.'
               }
@@ -85,15 +85,14 @@ class ConversationGrowth extends React.Component<Props> {
                   avatarSize={40}
                   badges={member.roles}
                 >
-                  {currentUser &&
-                    member.user.id !== currentUser.id && (
-                      <MessageIconContainer>
-                        <Icon
-                          glyph={'message'}
-                          onClick={() => this.initMessage(member.user)}
-                        />
-                      </MessageIconContainer>
-                    )}
+                  {currentUser && member.user.id !== currentUser.id && (
+                    <MessageIconContainer>
+                      <Icon
+                        glyph={'message'}
+                        onClick={() => this.initMessage(member.user)}
+                      />
+                    </MessageIconContainer>
+                  )}
                 </GranularUserProfile>
               </UserListItemContainer>
             );

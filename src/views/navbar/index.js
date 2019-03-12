@@ -239,16 +239,12 @@ class Navbar extends React.Component<Props, State> {
               to={currentUser ? `/users/${currentUser.username}` : '/'}
               onClick={() => this.trackNavigationClick('profile')}
             >
-              {currentUser &&
-                typeof currentUser.totalReputation === 'number' && (
-                  <Reputation>
-                    <Icon glyph="rep" />{' '}
-                    {truncateNumber(
-                      parseInt(currentUser.totalReputation, 10),
-                      1
-                    )}
-                  </Reputation>
-                )}
+              {currentUser && typeof currentUser.totalReputation === 'number' && (
+                <Reputation>
+                  <Icon glyph="keyy-coin" size={24} />{' '}
+                  {truncateNumber(parseInt(currentUser.totalReputation, 10), 1)}
+                </Reputation>
+              )}
               <Navatar
                 style={{ gridArea: 'label' }}
                 user={currentUser}
@@ -271,7 +267,7 @@ class Navbar extends React.Component<Props, State> {
             onClick={() => this.trackNavigationClick('profile')}
           >
             <Icon glyph="profile" />
-            <Label>Profile</Label>
+            <Label>Portfolio</Label>
           </ProfileTab>
         </Nav>
       );
@@ -323,7 +319,7 @@ class Navbar extends React.Component<Props, State> {
             to="/support"
             data-cy="navbar-support"
           >
-            <Icon glyph="like" />
+            <Icon glyph="aha" />
             <Label>Support</Label>
           </SupportTab>
           <SigninLink to="/login">Sign In</SigninLink>

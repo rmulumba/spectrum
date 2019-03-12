@@ -8,7 +8,9 @@ export default class Upsell extends React.Component<{}> {
       <ComposerUpsell>
         <UpsellDot />
         <UpsellPulse />
-        <p>Create a thread to get a conversation started in your community.</p>
+        <p>
+          Create a thread to get a conversation started in your learning group.
+        </p>
       </ComposerUpsell>
     );
   }

@@ -27,7 +27,7 @@ const NullState = ({ viewContext, search }) => {
   let cp;
 
   if (viewContext && viewContext === 'community') {
-    hd = 'This community’s just getting started...';
+    hd = 'This learning group’s just getting started...';
     cp = 'Why don’t you kick things off?';
   }
 
@@ -53,7 +53,7 @@ const UpsellState = ({ community }) => (
   <Upsell>
     <UpsellHeader>
       <Icon glyph={'welcome'} size={48} />
-      <h3>Welcome to your new community!</h3>
+      <h3>Welcome to your new learning group!</h3>
     </UpsellHeader>
     <p>
       You’ve already taken a huge step, but there’s one problem - there’s no one

@@ -24,7 +24,9 @@ export const Nav = styled.nav`
       user-select: none;
     `}
   background: ${({ theme }) =>
-    process.env.NODE_ENV === 'production' ? theme.bg.reverse : theme.warn.alt};
+    process.env.NODE_ENV === 'production'
+      ? theme.bg.reverseKeyy
+      : theme.warn.alt};
 
   @media (max-width: 768px) {
     padding: 0;

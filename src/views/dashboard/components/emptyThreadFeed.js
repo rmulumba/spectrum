@@ -22,7 +22,7 @@ const EmptyThreadFeed = ({ dispatch }) => (
     <Link to={'/explore'}>
       <OutlineButton>
         <Icon glyph="explore" />
-        <span>Join more communities</span>
+        <span>Join more learning group</span>
       </OutlineButton>
     </Link>
   </NullThreadFeed>

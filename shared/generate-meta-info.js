@@ -12,8 +12,9 @@ var truncate = require('./truncate');
 var striptags = require('striptags');
 
 var DEFAULT_META = {
-  title: 'Keyy',
-  description: 'Where communities live.',
+  title: 'Keyy - Unlock Greatness.',
+  description:
+    'Keyy is an alternative educational experience designed to help achieve your goals with less time, frustration, and money - while feeling challenged and loved.',
 };
 
 var HIDE_FROM_CRAWLERS = '<meta name="robots" content="noindex, nofollow">';
@@ -91,7 +92,7 @@ function generateMetaInfo(input /*: Input */) /*: Meta */ {
     case 'explore': {
       return {
         title: 'Explore · Keyy',
-        description: 'Explore some of the communities on Keyy',
+        description: 'Explore some of the learning groups on Keyy',
       };
     }
     case 'thread': {

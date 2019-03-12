@@ -35,7 +35,7 @@ const Share = ({ community, history, onboarding }) => {
         <a
           href={`https://twitter.com/share?text=Come hang out with me in the ${
             community.name
-          } community on @withgrindery!&url=https://learn.keyy.org/${encodeURIComponent(
+          } community on @withkeyy!&url=https://learn.keyy.org/${encodeURIComponent(
             community.slug
           )}`}
           target="_blank"
@@ -64,14 +64,14 @@ const Share = ({ community, history, onboarding }) => {
       {onboarding && (
         <ButtonRow>
           <Description centered>
-            You're ready to start building your community - you can view it now,
-            or manage your settings at any time
+            You're ready to start building your learning group - you can view it
+            now, or manage your settings at any time
           </Description>
           <a href={`/${community.slug}/settings`}>
-            <OutlineButton>View community settings</OutlineButton>
+            <OutlineButton>View learning group settings</OutlineButton>
           </a>
           <a href={`/${community.slug}`}>
-            <Button>Go to my community</Button>
+            <Button>Go to my learning group</Button>
           </a>
         </ButtonRow>
       )}

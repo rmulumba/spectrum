@@ -81,7 +81,7 @@ class ThreadCommunityBanner extends React.Component<Props, State> {
         if (!isPending && isMember) {
           str = `Joined the ${
             toggleChannelSubscription.community.name
-          } community!`;
+          } learning group!`;
         }
 
         if (!isPending && !isMember) {

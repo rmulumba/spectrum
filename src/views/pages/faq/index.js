@@ -46,7 +46,7 @@ class FAQ extends React.Component<{}> {
                 social networks (that you use to sign in to Keyy).
               </li>
               <li>
-                All existing memberships you have in any community will be
+                All existing memberships you have in any learning group will be
                 disabled.
               </li>
               <li>

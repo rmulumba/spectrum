@@ -54,7 +54,7 @@ class DesktopAppUpsell extends React.Component<{}, State> {
             <Content>
               <Title>Download Keyy for Mac</Title>
               <Subtitle>
-                A better way to keep up with your communities.
+                A better way to keep up with your learning groups.
               </Subtitle>
 
               <a href={DESKTOP_APP_MAC_URL} onClick={this.download}>

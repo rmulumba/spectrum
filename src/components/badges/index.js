@@ -59,7 +59,7 @@ class Badge extends React.Component<Props> {
             type={type}
             tipText={`${
               type === 'moderator' ? 'Moderator' : 'Owner'
-            } of this community`}
+            } of thislearning group`}
             tipLocation="top-left"
             {...rest}
           >

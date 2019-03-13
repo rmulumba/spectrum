@@ -152,7 +152,7 @@ class UpsellNewUser extends Component {
 
           <ButtonRow>
             <a
-              href={`https://www.facebook.com/sharer/sharer.php?u=https://learn.keyy.org&t=Come hang out with me on Keyy, a new place on the internet for communities!`}
+              href={`https://www.facebook.com/sharer/sharer.php?u=https://learn.keyy.org&t=Come hang out with me on Keyy, a new place on the internet for learning groups!`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -166,7 +166,7 @@ class UpsellNewUser extends Component {
               </Button>
             </a>
             <a
-              href={`https://twitter.com/share?text=Come hang out with me on @withkeyy, a new place on the internet for communities!&url=https://learn.keyy.org`}
+              href={`https://twitter.com/share?text=Come hang out with me on @withkeyy, a new place on the internet for learning groups!&url=https://learn.keyy.org`}
               target="_blank"
               rel="noopener noreferrer"
             >

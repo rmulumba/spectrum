@@ -47,7 +47,7 @@ export const NewReactionNotification = ({
       />
       <CardContent>
         <ReactionContext>
-          <Icon glyph="like-fill" />
+          <Icon glyph="aha-fill" />
           <ActorsRow actors={actors.asObjects} />
         </ReactionContext>
         <Content>
@@ -81,7 +81,7 @@ export const MiniNewReactionNotification = ({
       />
       <CardContent>
         <ReactionContext>
-          <Icon glyph="like-fill" />
+          <Icon glyph="aha-fill"/>
           <ActorsRow actors={actors.asObjects} />
         </ReactionContext>
         <Content>

@@ -188,7 +188,7 @@ class SidebarChannels extends React.Component<Props> {
           <Link to={`/${slug}`}>
             <ChannelListItem>
               <Icon glyph={'link'} size={24} />
-              <CommunityListName>Visit community</CommunityListName>
+              <CommunityListName>Visit learning group</CommunityListName>
             </ChannelListItem>
           </Link>
 

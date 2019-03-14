@@ -24,7 +24,8 @@ import {
   Navatar,
   SkipLink,
   SigninLink,
-  Reputation,
+    Reputation,
+    ShopTab,
 } from './style';
 import { track, events } from 'src/helpers/analytics';
 import { isViewingMarketingPage } from 'src/helpers/is-viewing-marketing-page';
@@ -128,7 +129,12 @@ class Navbar extends React.Component<Props, State> {
     }
   };
 
-  render() {
+    handleShopClick = () => {
+        window.open('https://shop.keyy.org', '_blank');
+
+    };
+
+    render() {
     const {
       history,
       match,
@@ -222,6 +228,17 @@ class Navbar extends React.Component<Props, State> {
             <Icon glyph="explore" size={isDesktopApp() ? 28 : 32} />
             <Label>Explore</Label>
           </ExploreTab>
+
+            <ShopTab
+                {...this.getTabProps(history.location.pathname === '')}
+                to=""
+                target="_blank"
+                data-cy="navbar-shop"
+                onClick ={this.handleShopClick}
+            >
+                <Icon glyph="shop" size={isDesktopApp() ? 28 : 32} />
+                <Label>Shop</Label>
+            </ShopTab>
 
           <NotificationsTab
             onClick={() => this.trackNavigationClick('notifications')}

@@ -50,7 +50,7 @@ class UpsellNewUser extends Component {
       let error;
       if (joinedCommunities === 0 && !communities) {
         error =
-          'To get started, try joining some communities above, or creating your own!';
+          'To get started, try joining some learning groups above, or creating your own!';
       } else if (!savedUsername) {
         error = 'Be sure to save your username!';
       }
@@ -105,9 +105,9 @@ class UpsellNewUser extends Component {
           </LargeEmoji>
           <Title>Howdy, {user.name}!</Title>
           <Subtitle>
-            Spectrum is a place where communities live. It's easy to follow the
-            things that you care about most, or even create your own community
-            to share with the world.
+            Keyy is a place where learning groups live. It's easy to follow the
+            things that you care about most, or even create your own learning
+            group to share with the world.
           </Subtitle>
         </Section>
 
@@ -118,7 +118,7 @@ class UpsellNewUser extends Component {
 
           <SmallTitle>Set your username</SmallTitle>
           <SmallSubtitle>
-            Pick a username so that people can find you on Spectrum!
+            Pick a username so that people can find you on Keyy!
           </SmallSubtitle>
 
           <SetUsername user={user} usernameSaved={() => this.savedUsername()} />
@@ -131,8 +131,9 @@ class UpsellNewUser extends Component {
 
           <SmallTitle>Find your people</SmallTitle>
           <SmallSubtitle>
-            Join communities that look interesting or fun, and threads posted to
-            those communities will start showing up in your home feed!
+            Join learning groups that look interesting or fun, and threads
+            posted to those learning groups will start showing up in your home
+            feed!
           </SmallSubtitle>
 
           <TopCommunities join={this.joined} leave={this.left} />
@@ -151,7 +152,7 @@ class UpsellNewUser extends Component {
 
           <ButtonRow>
             <a
-              href={`https://www.facebook.com/sharer/sharer.php?u=https://spectrum.chat&t=Come hang out with me on Spectrum, a new place on the internet for communities!`}
+              href={`https://www.facebook.com/sharer/sharer.php?u=https://learn.keyy.org&t=Come hang out with me on Keyy, a new place on the internet for learning groups!`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -165,7 +166,7 @@ class UpsellNewUser extends Component {
               </Button>
             </a>
             <a
-              href={`https://twitter.com/share?text=Come hang out with me on @withspectrum, a new place on the internet for communities!&url=https://spectrum.chat`}
+              href={`https://twitter.com/share?text=Come hang out with me on @withkeyy, a new place on the internet for learning groups!&url=https://learn.keyy.org`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -186,15 +187,15 @@ class UpsellNewUser extends Component {
             <SectionHeaderNumber>4</SectionHeaderNumber>
           </SectionHeader>
 
-          <SmallTitle>Build a community</SmallTitle>
+          <SmallTitle>Build a learning group</SmallTitle>
           <SmallSubtitle>
-            Already run an online community? Or have you been dreaming of
+            Already run an online learning group? Or have you been dreaming of
             building a new space for people who like the same things? Create a
-            community in less than a minute:
+            learning group in less than a minute:
           </SmallSubtitle>
 
           <OutlineButton onClick={this.createCommunity} icon="plus">
-            Create a community
+            Create a learning group
           </OutlineButton>
         </Section>
 
@@ -205,8 +206,8 @@ class UpsellNewUser extends Component {
 
           <SmallTitle>All set?</SmallTitle>
           <SmallSubtitle>
-            Once you've found a few communities and topics, or created your own,
-            you're ready to go!
+            Once you've found a few learning groups and topics, or created your
+            own, you're ready to go!
           </SmallSubtitle>
 
           {this.state.error && (
@@ -222,4 +223,7 @@ class UpsellNewUser extends Component {
   }
 }
 
-export default compose(withRouter, connect())(UpsellNewUser);
+export default compose(
+  withRouter,
+  connect()
+)(UpsellNewUser);

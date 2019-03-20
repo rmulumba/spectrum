@@ -8,9 +8,9 @@ import { isDesktopApp } from 'src/helpers/desktop-app-utils';
 
 export const Nav = styled.nav`
   display: grid;
-  grid-template-columns: repeat(4, auto) 1fr repeat(2, auto);
+  grid-template-columns: repeat(5, auto) 1fr repeat(2, auto);
   grid-template-rows: 1fr;
-  grid-template-areas: 'logo home messages explore . notifications profile';
+  grid-template-areas: 'logo home messages explore shop . notifications profile';
   align-items: stretch;
   width: 100%;
   flex: 0 0 48px;
@@ -24,7 +24,9 @@ export const Nav = styled.nav`
       user-select: none;
     `}
   background: ${({ theme }) =>
-    process.env.NODE_ENV === 'production' ? theme.bg.reverse : theme.warn.alt};
+    process.env.NODE_ENV === 'production'
+      ? theme.bg.reverseKeyy
+      : theme.warn.alt};
 
   @media (max-width: 768px) {
     padding: 0;
@@ -233,6 +235,12 @@ export const Logo = styled(Tab)`
     box-shadow: none;
   }
 
+  svg {
+    width: 55px;
+    height: 52px;
+    margin: 3px 0 0;
+  }
+
   @media (max-width: 768px) {
     display: none;
   }
@@ -262,6 +270,33 @@ export const MessageTab = styled(Tab)`
 
 export const ExploreTab = styled(Tab)`
   grid-area: explore;
+
+  ${isDesktopApp() &&
+    css`
+      -webkit-app-region: no-drag;
+    `};
+
+  ${props =>
+    props.loggedout &&
+    css`
+      grid-area: explore;
+    `} ${Label} {
+    @media (max-width: 768px) {
+      display: flex;
+    }
+
+    @media (max-width: 360px) {
+      display: none;
+    }
+  }
+`;
+
+export const ShopTab = styled(Tab)`
+  grid-area: shop;
+
+  svg {
+    padding: 4px 0;
+  }
 
   ${isDesktopApp() &&
     css`

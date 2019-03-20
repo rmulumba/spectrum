@@ -73,7 +73,7 @@ class NewUserOnboarding extends Component<Props, State> {
       joinedCommunities: 0,
       appUpsellCopy: {
         title: 'Download the app',
-        subtitle: 'A better way to keep up with your communities.',
+        subtitle: 'A better way to keep up with your learning groups.',
       },
     };
   }
@@ -135,22 +135,22 @@ class NewUserOnboarding extends Component<Props, State> {
 
     const steps = {
       setUsername: {
-        title: 'Welcome to Spectrum!',
+        title: 'Welcome to Keyy!',
         subtitle:
-          'Spectrum is a place where communities can share, discuss, and grow together. To get started, create a username.',
+          'Keyy is a place where learning groups can share, discuss, and grow together. To get started, create a username.',
         emoji: '👋',
       },
       joinFirstCommunity: {
         // will be triggered if the user signed up via a community, channel, or thread view
-        title: 'Join your first community',
+        title: 'Join your first learning group',
         subtitle:
-          "You were in the middle of something. Let's get back on track and join your first community!",
+          "You were in the middle of something. Let's get back on track and join your first learning group!",
         emoji: '🎉',
       },
       discoverCommunities: {
         title: 'Find your people.',
         subtitle:
-          'There are hundreds of communities on Spectrum to explore. Check out some of our favorites below or search for topics.',
+          'There are hundreds of learning groups on Keyy to explore. Check out some of our favorites below or search for topics.',
         emoji: null,
       },
       appsUpsell: {

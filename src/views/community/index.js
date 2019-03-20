@@ -203,7 +203,7 @@ class CommunityView extends React.Component<Props, State> {
           <AppViewWrapper data-cy="community-view-blocked">
             <Head
               title={title}
-              description={`The ${community.name} community on Spectrum`}
+              description={`The ${community.name} community on Keyy`}
               image={community.profilePhoto}
             />
 

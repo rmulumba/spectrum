@@ -4,7 +4,7 @@
 global.window = {
   location: {
     protocol: 'https:',
-    host: 'spectrum.chat',
+    host: 'learn.keyy.org',
     hash: '',
   },
   addEventListener: () => {},

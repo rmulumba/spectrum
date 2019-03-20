@@ -58,9 +58,9 @@ class ChatInputLoginModal extends React.Component<Props> {
             />
 
             <CodeOfConduct>
-              By using Spectrum, you agree to our{' '}
+              By using Keyy, you agree to our{' '}
               <a
-                href="https://github.com/withspectrum/code-of-conduct"
+                href="https://learn.keyy.org/keyy-support/getting-started/keyys-code-of-conduct~87204628-d977-4945-af9d-2f60d3e38c9f"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() =>

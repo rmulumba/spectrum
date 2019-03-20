@@ -6,6 +6,16 @@ const processArgs = process.argv.slice(2);
 const TO = processArgs.find(arg => arg.indexOf('@') > 0);
 const sg = require('@sendgrid/mail');
 
+const idMapping = JSON.parse(
+  /\{[^\}]+\}/.exec(
+    require('fs').readFileSync('../hermes/queues/id-mapping.js')
+  )[0]
+);
+
+function mapTemplate(id) {
+  return idMapping[id] || id + '-ERROR';
+}
+
 if (!TO) {
   console.error('❌ Be sure to provide a valid email');
   return;
@@ -21,15 +31,15 @@ sg.setApiKey(SENDGRID_API_KEY);
 const sendEmail = (templateId, dynamic_template_data) => {
   return sg.send({
     from: {
-      email: 'hi@spectrum.chat',
-      name: 'Spectrum',
+      email: 'hi@learn.keyy.org',
+      name: 'Keyy',
     },
     tracking_settings: {
       click_tracking: {
         enable: false,
       },
     },
-    templateId,
+    templateId: mapTemplate(templateId),
     to: TO,
     dynamic_template_data,
   });

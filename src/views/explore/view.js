@@ -17,7 +17,10 @@ import {
   CollectionWrapper,
   LoadingContainer,
 } from './style';
-import { getCommunitiesBySlug } from 'shared/graphql/queries/community/getCommunities';
+import {
+  getCommunitiesBySlug,
+  getTopCommunities,
+} from 'shared/graphql/queries/community/getCommunities';
 import type { GetCommunitiesType } from 'shared/graphql/queries/community/getCommunities';
 import { Loading } from 'src/components/loading';
 import { SegmentedControl, Segment } from 'src/components/segmentedControl';
@@ -150,8 +153,9 @@ class CategoryList extends React.Component<CategoryListProps> {
       if (slugs) {
         filteredCommunities = communities.filter(c => {
           if (!c) return null;
-          if (slugs.indexOf(c.slug) > -1) return c;
-          return null;
+          return c;
+          //if (slugs.indexOf(c.slug) > -1) return c;
+          //return null;
         });
       }
 
@@ -226,7 +230,7 @@ class CategoryList extends React.Component<CategoryListProps> {
 
 export const Category = compose(
   withCurrentUser,
-  getCommunitiesBySlug,
+  getTopCommunities,
   viewNetworkHandler,
   connect()
 )(CategoryList);

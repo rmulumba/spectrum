@@ -131,7 +131,9 @@ class CommunityMemberGrid extends React.Component<Props, State> {
       <Card>
         <ViewError
           refresh
-          heading={'We weren’t able to fetch the members of this community.'}
+          heading={
+            'We weren’t able to fetch the members of this learning group.'
+          }
         />
       </Card>
     );

@@ -312,7 +312,7 @@ class ChannelView extends React.Component<Props, State> {
             <ViewError
               emoji={'✋'}
               heading={'You don’t have permission to view this channel.'}
-              subheading={`Head back to the ${communitySlug} community to get back on track.`}
+              subheading={`Head back to the ${communitySlug} learning group to get back on track.`}
               dataCy={'channel-view-blocked'}
             >
               <Upsell404Channel community={communitySlug} />

@@ -95,7 +95,7 @@ export class Login extends React.Component<Props, State> {
             <Subtitle>
               {brandedLogin.message && brandedLogin.message.length > 0
                 ? brandedLogin.message
-                : 'Spectrum is a place where communities can share, discuss, and grow together. Sign in below to get in on the conversation.'}
+                : 'Keyy is an alternative educational experience designed to help achieve your goals with less time, frustration, and money - while feeling inspired, challenged and loved.'}
             </Subtitle>
 
             <LoginButtonSet
@@ -106,9 +106,9 @@ export class Login extends React.Component<Props, State> {
             />
 
             <CodeOfConduct>
-              By using Spectrum, you agree to our{' '}
+              By using Keyy, you agree to our{' '}
               <a
-                href="https://github.com/withspectrum/code-of-conduct"
+                href="https://learn.keyy.org/keyy-support/getting-started/keyys-code-of-conduct~87204628-d977-4945-af9d-2f60d3e38c9f"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() =>
@@ -137,9 +137,9 @@ export class Login extends React.Component<Props, State> {
       <FullscreenView closePath={CLIENT_URL}>
         <ViewError
           refresh
-          heading={'We had trouble finding this community'}
+          heading={'We had trouble finding this learning group'}
           subheading={
-            'Double check that this community exists or refresh to try again'
+            'Double check that this learning group exists or refresh to try again'
           }
         />
       </FullscreenView>

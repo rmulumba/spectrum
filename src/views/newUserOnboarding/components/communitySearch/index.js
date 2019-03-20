@@ -158,7 +158,7 @@ class Search extends React.Component<Props, State> {
         }
       })
       .catch(err => {
-        console.error('Error searching for communities: ', err);
+        console.error('Error searching for learning groups: ', err);
       });
   };
 
@@ -280,7 +280,7 @@ class Search extends React.Component<Props, State> {
             }}
             type="text"
             value={searchString}
-            placeholder="Search for communities or topics..."
+            placeholder="Search for learning groups or topics..."
             onChange={this.handleChange}
             onFocus={this.onFocus}
             autoFocus
@@ -354,7 +354,7 @@ class Search extends React.Component<Props, State> {
               {searchResults.length === 0 && !searchIsLoading && isFocused && (
                 <SearchResult>
                   <SearchResultNull>
-                    <p>No communities found matching “{searchString}”</p>
+                    <p>No learning groups found matching “{searchString}”</p>
                     <Link to={'/new/community'}>
                       <Button>Create a Community</Button>
                     </Link>

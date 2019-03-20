@@ -354,7 +354,7 @@ class CommunityWithData extends React.Component<Props> {
                       tipText={
                         community.communityPermissions.isMember
                           ? 'Leave community'
-                          : 'Join community'
+                          : 'Join learning group'
                       }
                       loading={isLoading}
                       tipLocation="top-left"

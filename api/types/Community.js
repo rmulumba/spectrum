@@ -199,6 +199,7 @@ const Community = /* GraphQL */ `
       slugs: [LowercaseString]
       ids: [ID]
       curatedContentType: String
+      explore: Boolean
     ): [Community]
     topCommunities(amount: Int = 20): [Community!]
       @cost(complexity: 4, multipliers: ["amount"])

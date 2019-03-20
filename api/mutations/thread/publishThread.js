@@ -78,7 +78,7 @@ export default requireAuth(
       });
 
       return new UserError(
-        "You're on an old version of Spectrum, please refresh your browser."
+        "You're on an old version of Keyy, please refresh your browser."
       );
     }
 
@@ -354,7 +354,7 @@ export default requireAuth(
           content: {
             body: `${
               user.name
-            } just posted a new thread 📝 https://spectrum.chat/${
+            } just posted a new thread 📝 https://learn.keyy.org/${
               community.slug
             }/${channel.slug}/${slugg(dbThread.content.title)}~${dbThread.id}`,
           },

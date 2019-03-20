@@ -83,15 +83,17 @@ const CommunitySearchWrapper = props => {
   return (
     <ViewSegment goop={3} background="constellations">
       <ThisContent>
-        <ThisTagline>Find a community for you!</ThisTagline>
+        <ThisTagline>Find a learning group for you!</ThisTagline>
         <ThisCopy>
-          Try searching for topics like "crypto" or for products like "React"
+          Try searching for topics like "start" or for products like "Keyy"
         </ThisCopy>
         {props.children}
         <SecondaryContent>
-          <SecondaryTagline>...or create your own community</SecondaryTagline>
+          <SecondaryTagline>
+            ...or create your own learning group
+          </SecondaryTagline>
           <SecondaryCopy>
-            Building communities on Spectrum is easy and free!
+            Building learning groups on Keyy is easy and free!
           </SecondaryCopy>
           {props.currentUser ? (
             <Link

@@ -52,9 +52,9 @@ class DesktopAppUpsell extends React.Component<{}, State> {
             <AppIcon src={'/img/homescreen-icon-72x72.png'} />
 
             <Content>
-              <Title>Download Spectrum for Mac</Title>
+              <Title>Download Keyy for Mac</Title>
               <Subtitle>
-                A better way to keep up with your communities.
+                A better way to keep up with your learning groups.
               </Subtitle>
 
               <a href={DESKTOP_APP_MAC_URL} onClick={this.download}>

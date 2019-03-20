@@ -377,7 +377,7 @@ class ThreadContainer extends React.Component<Props, State> {
             </Link>
             <WatercoolerDescription>
               Welcome to the {thread.community.name} watercooler, a space for
-              general chat with everyone in the community. Jump in to the
+              general chat with everyone in the learning group. Jump in to the
               conversation below or introduce yourself!
             </WatercoolerDescription>
           </WatercoolerIntroContainer>
@@ -508,7 +508,7 @@ class ThreadContainer extends React.Component<Props, State> {
               >
                 <link
                   rel="canonical"
-                  href={`https://spectrum.chat${getThreadLink(thread)}`}
+                  href={`https://learn.keyy.org/${getThreadLink(thread)}`}
                 />
                 {metaImage && (
                   <meta name="twitter:card" content="summary_large_image" />
@@ -525,7 +525,7 @@ class ThreadContainer extends React.Component<Props, State> {
                 />
                 <meta
                   property="article:author"
-                  content={`https://spectrum.chat/users/@${
+                  content={`https://learn.keyy.org/users/@${
                     thread.author.user.username
                   }`}
                 />

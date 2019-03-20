@@ -38,8 +38,8 @@ class ToggleCommunityMembership extends React.Component<Props, State> {
           id: community.id,
           entity: 'team-member-leaving-community',
           message:
-            'You are a team member of this community. If you leave you will no longer be able to moderate this community.',
-          buttonLabel: 'Leave Community',
+            'You are a team member of this learning group. If you leave you will no longer be able to moderate this learning group.',
+          buttonLabel: 'Leave Learning group',
         })
       );
     }
@@ -50,9 +50,9 @@ class ToggleCommunityMembership extends React.Component<Props, State> {
         openModal('DELETE_DOUBLE_CHECK_MODAL', {
           id: community.id,
           entity: 'team-member-leaving-community',
-          buttonLabel: 'Leave Community',
+          buttonLabel: 'Leave Learning group',
           message:
-            'Are you sure you want to leave this community? You will no longer see conversations in your feed or get updates about new activity.',
+            'Are you sure you want to leave this learning group? You will no longer see conversations in your feed or get updates about new activity.',
         })
       );
     }
@@ -103,7 +103,7 @@ class ToggleCommunityMembership extends React.Component<Props, State> {
         this.props.dispatch(
           addToastWithTimeout(
             'success',
-            `Joined the ${community.name} community!`
+            `Joined the ${community.name} learning group!`
           )
         );
 

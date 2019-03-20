@@ -25,7 +25,7 @@ class Support extends React.Component<{}> {
     return (
       <Wrapper data-cy="support-page">
         <Head
-          title={'Spectrum · Support'}
+          title={'Keyy · Support'}
           description={'Questions, feedback, or just need to get in touch?'}
         />
 
@@ -83,13 +83,13 @@ class Support extends React.Component<{}> {
               <div>
                 <PlanPrice>What we’ve been working on</PlanPrice>
                 <PlanDescription>
-                  We post news, release notes, and threads from all over
-                  Spectrum on Twitter, or directly in our community.
+                  We post news, release notes, and threads from all over Keyy on
+                  Twitter, or directly in our learning group.
                 </PlanDescription>
               </div>
 
               <a
-                href={'https://twitter.com/withspectrum'}
+                href={'https://twitter.com/withkeyy'}
                 target={'_blank'}
                 rel={'noopener noreferrer'}
               >
@@ -105,12 +105,12 @@ class Support extends React.Component<{}> {
               <Link to={'/spectrum'}>
                 <Button
                   gradientTheme={'brand'}
-                  icon={'logo'}
+                  icon={'button-logo'}
                   onClick={() =>
                     track(events.SUPPORT_PAGE_JOIN_SPECTRUM_COMMUNITY)
                   }
                 >
-                  Join our community
+                  Join our learning group
                 </Button>
               </Link>
             </PlanSection>
@@ -119,12 +119,12 @@ class Support extends React.Component<{}> {
               <div>
                 <PlanPrice>Anything else?</PlanPrice>
                 <PlanDescription>
-                  Concerned about something on Spectrum? Shoot us an email and
-                  we’ll take care of it right away.
+                  Concerned about something on Keyy? Shoot us an email and we’ll
+                  take care of it right away.
                 </PlanDescription>
               </div>
 
-              <a href={'mailto:hi@spectrum.chat'}>
+              <a href={'mailto:hi@learn.keyy.org'}>
                 <Button
                   gradientTheme={'special'}
                   icon={'email'}

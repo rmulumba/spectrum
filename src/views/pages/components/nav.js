@@ -50,7 +50,7 @@ class Nav extends React.Component<Props, State> {
     return (
       <NavContainer data-cy="navbar-splash">
         <Head
-          title={'Spectrum'}
+          title={'Keyy'}
           description={'The community platform for the future.'}
         >
           <link
@@ -67,7 +67,6 @@ class Nav extends React.Component<Props, State> {
             data-cy="navbar-splash-about"
           >
             <Logo />
-            <Icon glyph={'logo'} />
           </LogoTab>
           <FeaturesTab
             dark={this.props.dark}

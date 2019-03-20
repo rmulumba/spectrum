@@ -424,7 +424,7 @@
                     <table width="100%" cellpadding="0" cellspacing="0" class="thread-title">
                       <tr width="100%" cellpadding="0" cellspacing="0">
                         <td valign="middle">
-                          <a href="https://spectrum.chat/thread/{{id}}" class="block">
+                          <a href="https://learn.keyy.org/thread/{{id}}" class="block">
                             <h3>{{content.title}}</h3>
                           </a>
                         </td>
@@ -434,19 +434,18 @@
                     <table width="100%" cellpadding="0" cellspacing="0" class="thread-community-header">
                       <tr width="100%" cellpadding="0" cellspacing="0">
                         <td valign="middle" width="32">
-                          <a href="https://spectrum.chat/{{community.slug}}" class="block" style="height:32px">
+                          <a href="https://learn.keyy.org/{{community.slug}}" class="block" style="height:32px">
                             <img src={{community.profilePhoto}} width="32" height="32" />
                           </a>
                         </td>
 
                         <td valign="middle">
                           <p>
-                            Posted in <a
-                              href="https://spectrum.chat/{{community.slug}}">{{community.name}}</a>&nbsp;·&nbsp;<a
-                              href="https://spectrum.chat/{{community.slug}}/{{channel.slug}}">{{channel.name}}</a>
+                            Posted in <a href="https://learn.keyy.org/{{community.slug}}">{{community.name}}</a>&nbsp;·&nbsp;<a
+                              href="https://learn.keyy.org/{{community.slug}}/{{channel.slug}}">{{channel.name}}</a>
                           </p>
                           <p>
-                            <a href="https://spectrum.chat/{{community.slug}}" class="block a-p">
+                            <a href="https://learn.keyy.org/{{community.slug}}" class="block a-p">
                               {{{messageCountString}}}
                             </a>
                           </p>
@@ -462,12 +461,12 @@
                   <td>
                     <p>&nbsp;</p>
                     <p class="reputation-string">Today’s digest highlights the top 20 conversations in your
-                      communities - but there are more active conversations waiting for you!</p>
+                      learning groups - but there are more active conversations waiting for you!</p>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <a class="button" href="https://spectrum.chat">See more conversations</a>
+                    <a class="button" href="https://learn.keyy.org">See more conversations</a>
                   </td>
                 </tr>
                 {{/data.hasOverflowThreads}}
@@ -481,7 +480,7 @@
 
                 <tr>
                   <td>
-                    <h2 class="discover-divider">Discover more communities:</h2>
+                    <h2 class="discover-divider">Discover more learning groups:</h2>
                   </td>
                 </tr>
                 {{/if}}
@@ -493,16 +492,16 @@
                       class="thread-community-header suggested-community">
                       <tr width="100%" cellpadding="0" cellspacing="0">
                         <td valign="middle" width="32">
-                          <a href="https://spectrum.chat/{{slug}}" class="block">
+                          <a href="https://learn.keyy.org/{{slug}}" class="block">
                             <img src={{profilePhoto}} width="44" height="44" />
                           </a>
                         </td>
 
                         <td valign="middle">
-                          <a href="https://spectrum.chat/{{slug}}" class="block">
+                          <a href="https://learn.keyy.org/{{slug}}" class="block">
                             <h2 class="suggested-community-title">{{name}}</h2>
                           </a>
-                          <a href="https://spectrum.chat/{{slug}}" class="block">
+                          <a href="https://learn.keyy.org/{{slug}}" class="block">
                             <p>
                               {{description}}
                             </p>
@@ -524,7 +523,7 @@
 
                 <tr>
                   <td>
-                    <a class="button" href="https://spectrum.chat/">Go to my feed</a>
+                    <a class="button" href="https://learn.keyy.org/">Go to my feed</a>
                   </td>
                 </tr>
               </table>
@@ -536,36 +535,36 @@
           <tr>
             <td>
               <p>
-                You are receiving this email because you joined <a href="https://spectrum.chat">Spectrum</a>. If you no
+                You are receiving this email because you joined <a href="https://learn.keyy.org">Keyy</a>. If you no
                 longer want to receive emails like this, you can:
               </p>
 
               <ul>
                 <li>
-                  <a href="https://spectrum.chat/api/email/unsubscribe?token={{unsubscribeToken}}">Unsubscribe from
+                  <a href="https://learn.keyy.org/api/email/unsubscribe?token={{unsubscribeToken}}">Unsubscribe from
                     {{data.timeframe.subject}} digests</a>
                 </li>
 
                 {{#data.username}}
                 <li>
-                  <a href="https://spectrum.chat/users/{{.}}/settings">Manage your email preferences on Spectrum</a>
+                  <a href="https://learn.keyy.org/users/{{.}}/settings">Manage your email preferences on Keyy</a>
                 </li>
                 {{/data.username}}
               </ul>
 
               <ul>
                 <li>
-                  <a href="https://twitter.com/withspectrum">Follow @withspectrum on Twitter</a>
+                  <a href="https://twitter.com/withgrindery">Follow @withgrindery on Twitter</a>
                 </li>
 
                 <li>
-                  <a href="https://spectrum.chat/spectrum/hugs-n-bugs">Report bugs</a> · <a
-                    href="https://spectrum.chat/spectrum/feature-requests">Request
+                  <a href="https://learn.keyy.org/spectrum/hugs-n-bugs">Report bugs</a> · <a
+                    href="https://learn.keyy.org/spectrum/feature-requests">Request
                     a feature</a>
                 </li>
               </ul>
 
-              <p>Spectrum is made by GitHub, Inc.<br />88 Colin P Kelly Jr St, San Francisco, CA 94107<br />United
+              <p>Keyy is made by GitHub, Inc.<br />88 Colin P Kelly Jr St, San Francisco, CA 94107<br />United
                 States</p>
             </td>
           </tr>

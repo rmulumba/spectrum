@@ -71,7 +71,7 @@ class CommunityMembersSettings extends React.Component<Props> {
       <ViewError
         heading={'You don’t have permission to manage this community.'}
         subheading={
-          'If you want to create your own community, you can get started below.'
+          'If you want to create your own learning group, you can get started below.'
         }
       >
         <ButtonRow>
@@ -80,7 +80,7 @@ class CommunityMembersSettings extends React.Component<Props> {
           </Link>
 
           <Link to={'/new/community'}>
-            <Button large>Create a community</Button>
+            <Button large>Create a learning group</Button>
           </Link>
         </ButtonRow>
       </ViewError>

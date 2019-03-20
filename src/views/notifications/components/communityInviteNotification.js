@@ -25,9 +25,10 @@ const CommunityInviteComponent = ({
   return <CommunityProfile profileSize={'miniWithAction'} data={data} />;
 };
 
-const CommunityInvite = compose(getCommunityById, displayLoadingCard)(
-  CommunityInviteComponent
-);
+const CommunityInvite = compose(
+  getCommunityById,
+  displayLoadingCard
+)(CommunityInviteComponent);
 
 export const CommunityInviteNotification = ({
   notification,
@@ -45,7 +46,7 @@ export const CommunityInviteNotification = ({
       <CreatedContext>
         <Icon glyph="community" />
         <TextContent pointer={true}>
-          {actors.asObjects[0].name} invited you to join their community,{' '}
+          {actors.asObjects[0].name} invited you to join their learning group,{' '}
           {context.asString} {date}
         </TextContent>
       </CreatedContext>
@@ -65,9 +66,7 @@ type Props = {
   markSingleNotificationAsSeenInState: Function,
 };
 
-class MiniCommunityInviteNotificationWithMutation extends React.Component<
-  Props
-> {
+class MiniCommunityInviteNotificationWithMutation extends React.Component<Props> {
   markAsSeen = () => {
     const {
       markSingleNotificationSeen,
@@ -94,7 +93,7 @@ class MiniCommunityInviteNotificationWithMutation extends React.Component<
         <CreatedContext>
           <Icon glyph="community" />
           <TextContent pointer={false}>
-            {actors.asObjects[0].name} invited you to join their community,{' '}
+            {actors.asObjects[0].name} invited you to join their learning group,{' '}
             {context.asString} {date}
           </TextContent>
         </CreatedContext>

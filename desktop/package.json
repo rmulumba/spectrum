@@ -1,10 +1,10 @@
 {
   "name": "Spectrum",
   "description": "The community platform for the future.",
-  "homepage": "https://spectrum.chat",
+  "homepage": "https://learn.keyy.org",
   "author": {
     "name": "Space Program Inc.",
-    "email": "hi@spectrum.chat"
+    "email": "hi@learn.keyy.org"
   },
   "repository": "https://github.com/withspectrum/spectrum",
   "version": "1.0.5",

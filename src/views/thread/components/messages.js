@@ -223,7 +223,7 @@ class MessagesWithData extends React.Component<Props, State> {
           <A
             href={`https://twitter.com/share?text=${encodeURIComponent(
               threadTitle
-            )} on @withspectrum&url=https://spectrum.chat${getThreadLink(
+            )} on @withspectrum&url=https://learn.keyy.org${getThreadLink(
               this.props.data.thread
             )}`}
             target="_blank"
@@ -234,7 +234,7 @@ class MessagesWithData extends React.Component<Props, State> {
             </Button>
           </A>
           <A
-            href={`https://www.facebook.com/sharer/sharer.php?u=https://spectrum.chat${getThreadLink(
+            href={`https://www.facebook.com/sharer/sharer.php?u=https://learn.keyy.org${getThreadLink(
               this.props.data.thread
             )}&t=${encodeURIComponent(threadTitle)}`}
             target="_blank"
@@ -319,7 +319,7 @@ class MessagesWithData extends React.Component<Props, State> {
                   )}
                   <link
                     rel="canonical"
-                    href={'https://spectrum.chat' + getThreadLink(thread)}
+                    href={'https://learn.keyy.org' + getThreadLink(thread)}
                   />
                 </Head>
               </div>
@@ -334,7 +334,7 @@ class MessagesWithData extends React.Component<Props, State> {
                 )}
                 <link
                   rel="canonical"
-                  href={'https://spectrum.chat' + getThreadLink(thread)}
+                  href={'https://learn.keyy.org' + getThreadLink(thread)}
                 />
               </Head>
             )}

@@ -12,8 +12,9 @@ var striptags = require('striptags');
 var toPlainText = require('./clients/draft-js/utils/plaintext').toPlainText;
 
 var DEFAULT_META = {
-  title: 'Spectrum',
-  description: 'Where communities live.',
+  title: 'Keyy - Unlock Greatness.',
+  description:
+    'Keyy is an alternative educational experience designed to help achieve your goals with less time, frustration, and money - while feeling challenged and loved.',
 };
 
 var HIDE_FROM_CRAWLERS = '<meta name="robots" content="noindex, nofollow">';
@@ -70,7 +71,7 @@ function setDefault(input /*: MaybeMeta */) /*: Meta */ {
   // prefix "On spectrum" to the description
   // Otherwise you end up with "SpecFM | Where communities live"
   if (input.title && !input.description) {
-    description = 'on Spectrum, ' + DEFAULT_META.description.toLowerCase();
+    description = 'on Keyy, ' + DEFAULT_META.description.toLowerCase();
   }
   return {
     title: title,
@@ -90,8 +91,8 @@ function generateMetaInfo(input /*: Input */) /*: Meta */ {
   switch (type) {
     case 'explore': {
       return {
-        title: 'Explore · Spectrum',
-        description: 'Explore some of the communities on Spectrum',
+        title: 'Explore · Keyy',
+        description: 'Explore some of the learning groups on Keyy',
       };
     }
     case 'thread': {

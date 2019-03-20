@@ -155,7 +155,7 @@ class Sidebar extends React.Component<Props> {
                   {thread.community.communityPermissions.isMember ? (
                     <Link to={`/${thread.community.slug}`}>
                       <TextButton dataCy="thread-sidebar-view-community-button">
-                        View community
+                        View learning group
                       </TextButton>
                     </Link>
                   ) : currentUser ? (

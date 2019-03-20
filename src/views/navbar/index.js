@@ -129,7 +129,8 @@ class Navbar extends React.Component<Props, State> {
     }
   };
 
-  handleShopClick = () => {
+  handleShopClick = (e) => {
+    e.preventDefault();
     window.open('https://shop.keyy.org', '_blank');
   };
 

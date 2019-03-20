@@ -95,7 +95,7 @@ export const UpsellMiniCreateCommunity = () => {
 export const UpsellCreateCommunity = () => {
   const title = 'Create a learning group';
   const subtitle =
-    'Building learning groups on Spectrum is easy and free forever';
+    'Building learning groups on Keyy is easy and free forever';
 
   return (
     <NullCard bg={'onboarding'}>

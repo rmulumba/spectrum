@@ -168,7 +168,7 @@ class CommunitySettings extends React.Component<Props> {
       return (
         <AppViewWrapper>
           <Titlebar
-            title={'Error fetching community'}
+            title={'Error fetching learning group'}
             provideBack={true}
             backRoute={`/${communitySlug}`}
             noComposer
@@ -176,7 +176,7 @@ class CommunitySettings extends React.Component<Props> {
           <ViewError
             refresh
             error={hasError}
-            heading={'There was an error fetching this community’s settings.'}
+            heading={'There was an error fetching this learning group’s settings.'}
           />
         </AppViewWrapper>
       );
@@ -185,14 +185,14 @@ class CommunitySettings extends React.Component<Props> {
     return (
       <AppViewWrapper>
         <Titlebar
-          title={'No Community Found'}
+          title={'No Learning Group Found'}
           provideBack={true}
           backRoute={`/${communitySlug}`}
           noComposer
         />
         <ViewError
-          heading={'We weren’t able to find this community.'}
-          subheading={`If you want to start the ${communitySlug} community yourself, you can get started below.`}
+          heading={'We weren’t able to find this learning group.'}
+          subheading={`If you want to start the ${communitySlug} learning group yourself, you can get started below.`}
         >
           <Upsell404Community />
         </ViewError>

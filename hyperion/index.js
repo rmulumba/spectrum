@@ -166,24 +166,34 @@ import threadParamRedirect from 'shared/middlewares/thread-param';
 app.use(threadParamRedirect);
 
 app.get('/', (req: express$Request, res, next) => {
-    if (req.hostname.toLowerCase() !== 'learn.keyy.org') {
-        return next();
-    }
-    if (req.session && req.user && !req.query.t) {
-        // Show notification page by default
-        return res.redirect('/notifications');
-    } else {
-        return res.redirect('/login');
-    }
+  if (req.hostname.toLowerCase() !== 'learn.keyy.org') {
+    return next();
+  }
+  if (req.session && req.user && !req.query.t) {
+    // Show notification page by default
+    return res.redirect('/notifications');
+  } else {
+    return res.redirect('/login');
+  }
+});
+app.get('/home', (req: express$Request, res, next) => {
+  if (req.hostname.toLowerCase() !== 'learn.keyy.org') {
+    return next();
+  }
+  if (req.session && req.user && !req.query.t) {
+    return res.redirect('/');
+  } else {
+    return res.redirect('/login');
+  }
 });
 app.get('/privacy', (req: express$Request, res) => {
-    return res.redirect('https://www.keyy.org/privacypolicy');
+  return res.redirect('https://www.keyy.org/privacypolicy');
 });
 app.get('/terms', (req: express$Request, res) => {
-    return res.redirect('https://www.keyy.org/termsofservice');
+  return res.redirect('https://www.keyy.org/termsofservice');
 });
 app.get('/about', (req: express$Request, res) => {
-    return res.redirect('https://www.keyy.org/');
+  return res.redirect('https://www.keyy.org/');
 });
 
 app.get('*', (req: express$Request, res, next) => {

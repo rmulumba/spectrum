@@ -17,7 +17,7 @@ exports.up = function(r, conn) {
       name: 'Spectrum Bot',
       termsLastAcceptedAt: new Date(),
       username: 'spectrumbot',
-      website: 'https://spectrum.chat',
+      website: 'https://learn.keyy.org',
       profilePhoto: '/default_images/sam.png',
     })
     .run(conn);

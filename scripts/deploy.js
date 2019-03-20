@@ -75,9 +75,9 @@ if (servers.indexOf('hyperion') > -1) {
   exec(now(), {
     stdio: 'inherit',
   });
-  console.log('Aliasing to hyperion.workers.spectrum.chat');
+  console.log('Aliasing to hyperion.workers.learn.keyy.org');
   exec(
-    now(`alias hyperion.${flags.prod ? 'workers' : 'alpha'}.spectrum.chat`),
+    now(`alias hyperion.${flags.prod ? 'workers' : 'alpha'}.learn.keyy.org`),
     {
       stdio: 'inherit',
     }
@@ -87,7 +87,7 @@ if (servers.indexOf('hyperion') > -1) {
     now(
       `alias -r rules${!flags.prod ? '-alpha' : ''}.json ${
         !flags.prod ? 'alpha.' : ''
-      }spectrum.chat`
+      }learn.keyy.org`
     ),
     {
       stdio: 'inherit',
@@ -116,10 +116,10 @@ if (servers.length > 0) {
 
     const alias =
       server === 'api'
-        ? `api.${!flags.prod ? 'alpha.' : ''}spectrum.chat`
+        ? `api.${!flags.prod ? 'alpha.' : ''}learn.keyy.org`
         : `${server}.${
             flags.prod === true ? 'workers' : 'alpha'
-          }.spectrum.chat`;
+          }.learn.keyy.org`;
     console.log(`Aliasing ${stdout.toString()} to ${alias}...`);
     exec(now(`alias ${stdout.toString()} ${alias}`), {
       cwd: buildDir,

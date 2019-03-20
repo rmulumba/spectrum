@@ -19,7 +19,7 @@ import {
 import { getChannelsByCommunity, getChannelById } from '../../models/channel';
 
 const rootRedirect = IS_PROD
-  ? `https://spectrum.chat`
+  ? `https://learn.keyy.org`
   : `http://localhost:3000`;
 
 // $FlowIssue
@@ -131,7 +131,7 @@ emailRouter.get('/unsubscribe', async (req, res) => {
   } catch (err) {
     console.error(err);
     return res.redirect(
-      `${rootRedirect}/me/settings?toastType=error&toastMessage=We ran into an issue unsubscribing you from this email. You can always unsubscribe from this email type in your user settings, or get in touch with us at hi@spectrum.chat.`
+      `${rootRedirect}/me/settings?toastType=error&toastMessage=We ran into an issue unsubscribing you from this email. You can always unsubscribe from this email type in your user settings, or get in touch with us at hi@learn.keyy.org.`
     );
   }
 });
@@ -183,7 +183,7 @@ emailRouter.get('/validate', (req, res) => {
         community =>
           IS_PROD
             ? res.redirect(
-                `https://spectrum.chat/${
+                `https://learn.keyy.org/${
                   community.slug
                 }/settings?toastType=success&toastMessage=Your email address has been validated!`
               )
@@ -196,7 +196,7 @@ emailRouter.get('/validate', (req, res) => {
     } catch (err) {
       console.error(err);
       return res.redirect(
-        `${rootRedirect}/me/settings?toastType=error&toastMessage=We ran into an issue validating this email address. You can re-enter your email address in your community settings to resend a confirmation email, or get in touch with us at hi@spectrum.chat.`
+        `${rootRedirect}/me/settings?toastType=error&toastMessage=We ran into an issue validating this email address. You can re-enter your email address in your community settings to resend a confirmation email, or get in touch with us at hi@learn.keyy.org.`
       );
     }
   }
@@ -207,7 +207,7 @@ emailRouter.get('/validate', (req, res) => {
       req.login(user, err => {
         if (err) {
           return res.redirect(
-            `${rootRedirect}/me/settings?toastType=error&toastMessage=We ran into an issue validating this email address. You can re-enter your email address in your community settings to resend a confirmation email, or get in touch with us at hi@spectrum.chat.`
+            `${rootRedirect}/me/settings?toastType=error&toastMessage=We ran into an issue validating this email address. You can re-enter your email address in your community settings to resend a confirmation email, or get in touch with us at hi@learn.keyy.org.`
           );
         }
 
@@ -220,7 +220,7 @@ emailRouter.get('/validate', (req, res) => {
   } catch (err) {
     console.error(err);
     return res.redirect(
-      `${rootRedirect}/me/settings?toastType=error&toastMessage=We ran into an issue validating this email address. You can re-enter your email address in your user settings to resend a confirmation email, or get in touch with us at hi@spectrum.chat.`
+      `${rootRedirect}/me/settings?toastType=error&toastMessage=We ran into an issue validating this email address. You can re-enter your email address in your user settings to resend a confirmation email, or get in touch with us at hi@learn.keyy.org.`
     );
   }
 });
